@@ -1,0 +1,3 @@
+function [thm] = chaindrive(x,x_dot,b,k,S)
+
+if x
