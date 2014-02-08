@@ -1,5 +1,5 @@
 % DoSim.m
-
+meas_const;
 
 
 % simulate the reference model
