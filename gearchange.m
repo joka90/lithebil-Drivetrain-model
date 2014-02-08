@@ -4,7 +4,7 @@ function [gear] = gearchange(currentgear,N,maxgear)
     if 5000*pi/30 > N %rad/s
         gear=currentgear+1;
     elseif 1500*pi/30 < N %rad/s
-        gear=currentgear+1;
+        gear=currentgear-1;
     else
         gear=currentgear;
     end
