@@ -43,7 +43,7 @@ modelparam;
 
 % --------
 
-sim('car',tspan,simopts);
+sim('car_org',tspan,simopts);
 
 % --------
 

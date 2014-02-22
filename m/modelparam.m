@@ -126,7 +126,7 @@ J_f = 0.1;
 
 % ratio [-]
 
-i_f = 3.4;
+%i_f = 3.4;
 
 % Damping [Nm s/rad]
 

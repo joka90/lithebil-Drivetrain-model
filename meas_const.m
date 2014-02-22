@@ -12,3 +12,4 @@ inertia_front_sproket=0.5*m_front_sproket*r_front_sproket^2
 inertia_back_sproket=0.5*m_back_sproket*r_back_sproket^2
 inertia_drive_shaft=0.5*m_drive_shaft*r_drive_shaft^2
 
+i_f=r_back_sproket/r_front_sproket
