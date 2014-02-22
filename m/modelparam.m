@@ -30,15 +30,15 @@ init_v = 30;
 
 lowlevel = -0.02;
 
-highlevel = 0.2;
+highlevel = 1;
 
-t1 = 12; t2 = 17;
+t1 = 12; t2 = 40;
 
 InputT = [0 t1-eps t1 t2-eps t2]';
 
-InputU = [lowlevel lowlevel highlevel highlevel lowlevel]';
+InputU = [lowlevel lowlevel highlevel highlevel lowlevel]';% gaspedal
 
-InputG = [1 1 1 1 1]';
+InputG = [1 1 1 1 1]'; %växel
 
 
 
@@ -50,7 +50,7 @@ InputG = [1 1 1 1 1]';
 
 % mass [kg]
 
-mass = 1.5e3;
+mass = 220;
 
 % gravity constant [m/s^2]
 
@@ -62,7 +62,7 @@ J_w = 0.6;
 
 % wheel radius [m]
 
-r_w = 0.30;
+r_w = 0.20;
 
 % air drag coefficient [-]
 
@@ -70,7 +70,7 @@ c_w = 0.30;
 
 % maximum vehicle cross section area [m^2]
 
-A_a = 1.5;
+A_a = 1.0;
 
 % Air density [kg/m^3]
 
@@ -113,7 +113,7 @@ c_d = 1;
 init_f = init_d;
 
 
-
+%% remove start
 %
 
 % Final drive
@@ -151,7 +151,7 @@ c_p = 15;
 % gearbox initial speed [rad/s]
 
 init_t = init_f*i_f;
-
+%% remove end
 
 
 %

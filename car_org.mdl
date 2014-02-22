@@ -1,12 +1,12 @@
 Model {
   Name			  "car_org"
-  Version		  8.1
+  Version		  8.0
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.872"
+    ComputedModelVersion    "1.886"
     NumModelReferences	    0
     NumTestPointedSignals   30
     TestPointedSignal {
@@ -142,7 +142,7 @@ Model {
       PortIndex		      2
     }
   }
-  SavedCharacterEncoding  "ISO-8859-1"
+  SavedCharacterEncoding  "windows-1252"
   SaveDefaultBlockParams  on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -162,7 +162,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 24.0, 1280.0, 752.0]
+      Location		      [0.0, 24.0, 1647.0, 954.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -179,16 +179,28 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"3"
-	Extents			[1043.0, 585.0]
-	ZoomFactor		[0.8]
-	Offset			[-206.5, -9.4999999999999432]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "83:38"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [5.4132196389502667, -220.244760734112]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "19"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	PropName		"EditorsInfo"
       }
     }
   }
@@ -198,9 +210,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "johka546"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Feb 22 11:28:22 2014"
-  RTWModifiedTimeStamp	  314968901
-  ModelVersionFormat	  "1.%<AutoIncrement:872>"
+  LastModifiedDate	  "Sat Feb 22 15:59:21 2014"
+  RTWModifiedTimeStamp	  314982845
+  ModelVersionFormat	  "1.%<AutoIncrement:886>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -235,7 +247,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    6
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "car_org"
     Array {
@@ -293,18 +305,18 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      7
-      Version		      "1.13.0"
+      $ObjectID		      8
+      Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
-	  $ObjectID		  8
-	  Version		  "1.13.0"
+	  $ObjectID		  9
+	  Version		  "1.12.1"
 	  StartTime		  "0.0"
-	  StopTime		  "60"
-	  AbsTol		  "auto"
-	  FixedStep		  "auto"
+	  StopTime		  "100"
+	  AbsTol		  "1e-10"
+	  FixedStep		  "0.001"
 	  InitialStep		  "auto"
 	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
@@ -316,12 +328,12 @@ Model {
 	  MaxStep		  "auto"
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
-	  RelTol		  "1e-3"
+	  RelTol		  "1e-6"
 	  SolverMode		  "Auto"
 	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
-	  Solver		  "ode15s"
-	  SolverName		  "ode15s"
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
@@ -334,8 +346,8 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  9
-	  Version		  "1.13.0"
+	  $ObjectID		  10
+	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -366,8 +378,8 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  10
-	  Version		  "1.13.0"
+	  $ObjectID		  11
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    4
@@ -418,8 +430,8 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  11
-	  Version		  "1.13.0"
+	  $ObjectID		  12
+	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -508,13 +520,12 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  12
-	  Version		  "1.13.0"
+	  $ObjectID		  13
+	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
 	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
@@ -524,20 +535,17 @@ Model {
 	  ProdEndianess		  "Unspecified"
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
 	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
 	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
@@ -549,8 +557,8 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  13
-	  Version		  "1.13.0"
+	  $ObjectID		  14
+	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
@@ -564,8 +572,8 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  14
-	  Version		  "1.13.0"
+	  $ObjectID		  15
+	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -579,8 +587,8 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  15
-	  Version		  "1.13.0"
+	  $ObjectID		  16
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -615,7 +623,6 @@ Model {
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
 	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
 	  IncludeERTFirstTime	  on
@@ -635,8 +642,8 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      16
-	      Version		      "1.13.0"
+	      $ObjectID		      17
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		9
@@ -690,8 +697,8 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      17
-	      Version		      "1.13.0"
+	      $ObjectID		      18
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		11
@@ -744,12 +751,10 @@ Model {
 	      SupportVariableSizeSignals off
 	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
 	      GRTInterface	      on
-	      GenerateAllocFcn	      off
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -771,17 +776,17 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 200, 197, 1080, 827 ] 
+      ConfigPrmDlgPosition     [ 188, 128, 1092, 839 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    7
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    18
+    $ObjectID		    19
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -928,7 +933,6 @@ Model {
     }
     Block {
       BlockType		      Goto
-      GotoTag		      "A"
       IconDisplay	      "Tag"
       TagVisibility	      "local"
     }
@@ -995,6 +999,14 @@ Model {
       LUTDesignUseExistingBP  on
       LUTDesignRelError	      "0.01"
       LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      ManualSwitch
@@ -1095,6 +1107,24 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      Stop
     }
     Block {
@@ -1107,7 +1137,6 @@ Model {
       SystemSampleTime	      "-1"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
-      FunctionInterfaceSpec   "void_void"
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
@@ -1162,7 +1191,7 @@ Model {
   }
   System {
     Name		    "car_org"
-    Location		    [246, 119, 1500, 1085]
+    Location		    [0, 24, 1280, 776]
     Open		    off
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -1176,7 +1205,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "81"
+    SIDHighWatermark	    "83"
     Block {
       BlockType		      Clock
       Name		      "Clock"
@@ -1211,7 +1240,7 @@ Model {
       System {
 	Name			"car_model"
 	Location		[0, 24, 1280, 776]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1222,7 +1251,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "driver cmd in"
@@ -1318,7 +1347,7 @@ Model {
 	  Port {
 	    PortNumber		    1
 	    Name		    "chassis"
-	    PropagatedSignals	    "velocity [m/s]"
+	    PropagatedSignals	    "velocity [m/s], slipp ratio"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -1337,7 +1366,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "56"
+	    SIDHighWatermark	    "99"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "cmd in"
@@ -1358,10 +1387,10 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "chassis"
-	      SID		      "10:3"
+	      SID		      "10:57"
 	      Ports		      [2, 2]
 	      Position		      [295, 282, 510, 393]
-	      ZOrder		      -3
+	      ZOrder		      1
 	      MinAlgLoopOccurrences   off
 	      PropExecContextOutsideSubsystem off
 	      RTWSystemCode	      "Auto"
@@ -1371,97 +1400,97 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		19
+		$ObjectID		20
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  13
 		  Object {
-		    $ObjectID		    20
+		    $ObjectID		    21
 		    Type		    "edit"
 		    Name		    "g"
 		    Prompt		    "gravity constant [m/s^2]"
 		    Value		    "g"
 		  }
 		  Object {
-		    $ObjectID		    21
+		    $ObjectID		    22
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "vehicle mass [kg]"
 		    Value		    "mass"
 		  }
 		  Object {
-		    $ObjectID		    22
+		    $ObjectID		    23
 		    Type		    "edit"
 		    Name		    "J_w"
 		    Prompt		    "wheel inertia [kg m^2]"
 		    Value		    "J_w"
 		  }
 		  Object {
-		    $ObjectID		    23
+		    $ObjectID		    24
 		    Type		    "edit"
 		    Name		    "r_w"
 		    Prompt		    "wheel radius [m]"
 		    Value		    "r_w"
 		  }
 		  Object {
-		    $ObjectID		    24
+		    $ObjectID		    25
 		    Type		    "edit"
 		    Name		    "init_d"
 		    Prompt		    "initial drive shaft speed [rad/s]"
 		    Value		    "init_d"
 		  }
 		  Object {
-		    $ObjectID		    25
+		    $ObjectID		    26
 		    Type		    "edit"
 		    Name		    "c_w"
 		    Prompt		    "air drag coefficient [-]"
 		    Value		    "c_w"
 		  }
 		  Object {
-		    $ObjectID		    26
+		    $ObjectID		    27
 		    Type		    "edit"
 		    Name		    "A_a"
 		    Prompt		    "max. vehicle cross section area [m^2]"
 		    Value		    "A_a"
 		  }
 		  Object {
-		    $ObjectID		    27
+		    $ObjectID		    28
 		    Type		    "edit"
 		    Name		    "Rho_a"
 		    Prompt		    "Air density [kg/m^3]"
 		    Value		    "Rho_a"
 		  }
 		  Object {
-		    $ObjectID		    28
+		    $ObjectID		    29
 		    Type		    "edit"
 		    Name		    "c_r"
 		    Prompt		    "rolling resistance coefficient [-]"
 		    Value		    "c_r"
 		  }
 		  Object {
-		    $ObjectID		    29
+		    $ObjectID		    30
 		    Type		    "edit"
 		    Name		    "Bx"
 		    Prompt		    "Magic Bx"
 		    Value		    "Bx"
 		  }
 		  Object {
-		    $ObjectID		    30
+		    $ObjectID		    31
 		    Type		    "edit"
 		    Name		    "Cx"
 		    Prompt		    "Magic Cx"
 		    Value		    "Cx"
 		  }
 		  Object {
-		    $ObjectID		    31
+		    $ObjectID		    32
 		    Type		    "edit"
 		    Name		    "Dx"
 		    Prompt		    "Magic Dx"
 		    Value		    "Dx"
 		  }
 		  Object {
-		    $ObjectID		    32
+		    $ObjectID		    33
 		    Type		    "edit"
 		    Name		    "Ex"
 		    Prompt		    "Magic Ex"
@@ -1472,7 +1501,7 @@ Model {
 	      }
 	      System {
 		Name			"chassis"
-		Location		[16, 52, 969, 875]
+		Location		[0, 24, 1280, 776]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -1480,7 +1509,7 @@ Model {
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
 		PaperType		"A4"
-		PaperUnits		"centimeters"
+		PaperUnits		"inches"
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
@@ -1488,7 +1517,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "ctrl in"
-		  SID			  "10:4"
+		  SID			  "10:58"
 		  Position		  [30, 153, 60, 167]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1496,7 +1525,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "mech power in [Nm]"
-		  SID			  "10:5"
+		  SID			  "10:59"
 		  Position		  [35, 418, 65, 432]
 		  ZOrder		  -2
 		  Port			  "2"
@@ -1505,8 +1534,8 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Air resistance"
-		  SID			  "10:6"
-		  Position		  [485, 145, 515, 175]
+		  SID			  "10:60"
+		  Position		  [485, 145, 530, 175]
 		  ZOrder		  -3
 		  BlockMirror		  on
 		  ForegroundColor	  "red"
@@ -1523,7 +1552,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Air resistance1"
-		  SID			  "10:7"
+		  SID			  "10:61"
 		  Position		  [323, 310, 357, 350]
 		  ZOrder		  -4
 		  BlockRotation		  270
@@ -1536,7 +1565,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Air resistance2"
-		  SID			  "10:8"
+		  SID			  "10:62"
 		  Position		  [383, 95, 417, 125]
 		  ZOrder		  -5
 		  BlockRotation		  270
@@ -1548,7 +1577,7 @@ Model {
 		Block {
 		  BlockType		  BusCreator
 		  Name			  "Bus\nCreator"
-		  SID			  "10:9"
+		  SID			  "10:63"
 		  Ports			  [2, 1]
 		  Position		  [730, 400, 735, 500]
 		  ZOrder		  -6
@@ -1559,18 +1588,18 @@ Model {
 		Block {
 		  BlockType		  BusCreator
 		  Name			  "Bus\nCreator1"
-		  SID			  "10:10"
-		  Ports			  [1, 1]
+		  SID			  "10:64"
+		  Ports			  [2, 1]
 		  Position		  [745, 276, 750, 314]
 		  ZOrder		  -7
 		  ShowName		  off
-		  Inputs		  "1"
+		  Inputs		  "2"
 		  DisplayOption		  "bar"
 		}
 		Block {
 		  BlockType		  BusSelector
 		  Name			  "Bus\nSelector"
-		  SID			  "10:11"
+		  SID			  "10:65"
 		  Ports			  [1, 1]
 		  Position		  [130, 141, 135, 179]
 		  ZOrder		  -8
@@ -1586,7 +1615,7 @@ Model {
 		Block {
 		  BlockType		  BusSelector
 		  Name			  "Bus\nSelector5"
-		  SID			  "10:12"
+		  SID			  "10:66"
 		  Ports			  [1, 2]
 		  Position		  [125, 378, 130, 467]
 		  ZOrder		  -9
@@ -1608,7 +1637,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant1"
-		  SID			  "10:13"
+		  SID			  "10:67"
 		  Position		  [322, 485, 358, 510]
 		  ZOrder		  -10
 		  BlockRotation		  270
@@ -1619,7 +1648,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant2"
-		  SID			  "10:14"
+		  SID			  "10:68"
 		  Position		  [385, 301, 420, 319]
 		  ZOrder		  -11
 		  ForegroundColor	  "red"
@@ -1629,7 +1658,7 @@ Model {
 		Block {
 		  BlockType		  Fcn
 		  Name			  "Fcn"
-		  SID			  "10:15"
+		  SID			  "10:69"
 		  Position		  [310, 65, 370, 95]
 		  ZOrder		  -12
 		  ForegroundColor	  "red"
@@ -1645,7 +1674,7 @@ Model {
 		Block {
 		  BlockType		  From
 		  Name			  "From"
-		  SID			  "10:16"
+		  SID			  "10:70"
 		  Position		  [195, 66, 245, 94]
 		  ZOrder		  -13
 		  ForegroundColor	  "red"
@@ -1656,7 +1685,7 @@ Model {
 		Block {
 		  BlockType		  Goto
 		  Name			  "Goto"
-		  SID			  "10:17"
+		  SID			  "10:71"
 		  Position		  [775, 220, 830, 250]
 		  ZOrder		  -14
 		  ShowName		  off
@@ -1666,7 +1695,7 @@ Model {
 		Block {
 		  BlockType		  Goto
 		  Name			  "Goto1"
-		  SID			  "10:18"
+		  SID			  "10:72"
 		  Position		  [770, 165, 830, 195]
 		  ZOrder		  -15
 		  ShowName		  off
@@ -1676,7 +1705,7 @@ Model {
 		Block {
 		  BlockType		  Integrator
 		  Name			  "Integrator1"
-		  SID			  "10:19"
+		  SID			  "10:73"
 		  Ports			  [1, 1]
 		  Position		  [510, 410, 540, 440]
 		  ZOrder		  -16
@@ -1693,7 +1722,7 @@ Model {
 		Block {
 		  BlockType		  Integrator
 		  Name			  "Integrator2"
-		  SID			  "10:20"
+		  SID			  "10:74"
 		  Ports			  [1, 1]
 		  Position		  [630, 460, 660, 490]
 		  ZOrder		  -17
@@ -1709,7 +1738,7 @@ Model {
 		Block {
 		  BlockType		  Integrator
 		  Name			  "Integrator3"
-		  SID			  "10:21"
+		  SID			  "10:75"
 		  Ports			  [1, 1]
 		  Position		  [515, 280, 545, 310]
 		  ZOrder		  -18
@@ -1726,7 +1755,7 @@ Model {
 		Block {
 		  BlockType		  SubSystem
 		  Name			  "Magic Formula"
-		  SID			  "10:22"
+		  SID			  "10:76"
 		  Ports			  [2, 2]
 		  Position		  [140, 268, 290, 312]
 		  ZOrder		  -19
@@ -1739,25 +1768,32 @@ Model {
 		  Opaque		  off
 		  RequestExecContextInheritance	off
 		  MaskHideContents	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "slipp ratio"
+		    PropagatedSignals	    "kappa"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
 		  System {
 		    Name		    "Magic Formula"
-		    Location		    [17, 94, 647, 437]
+		    Location		    [85, 87, 1597, 1005]
 		    Open		    off
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
 		    PaperPositionMode	    "auto"
-		    PaperType		    "usletter"
+		    PaperType		    "A4"
 		    PaperUnits		    "inches"
-		    TiledPaperMargins	    [0.196850, 0.196850, 0.196850, 0.196850]
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "100"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "forward velocity [m/s]"
-		    SID			    "10:23"
+		    SID			    "10:77"
 		    Position		    [45, 83, 75, 97]
 		    ZOrder		    -1
 		    IconDisplay		    "Port number"
@@ -1765,7 +1801,7 @@ Model {
 		    Block {
 		    BlockType		    Inport
 		    Name		    "wheel speed [rad/s]"
-		    SID			    "10:24"
+		    SID			    "10:78"
 		    Position		    [45, 63, 75, 77]
 		    ZOrder		    -2
 		    NamePlacement	    "alternate"
@@ -1775,7 +1811,7 @@ Model {
 		    Block {
 		    BlockType		    Constant
 		    Name		    "Constant"
-		    SID			    "10:25"
+		    SID			    "10:79"
 		    Position		    [255, 25, 275, 45]
 		    ZOrder		    -3
 		    BlockRotation	    270
@@ -1786,7 +1822,7 @@ Model {
 		    Block {
 		    BlockType		    Product
 		    Name		    "Divide"
-		    SID			    "10:26"
+		    SID			    "10:80"
 		    Ports		    [2, 1]
 		    Position		    [190, 60, 225, 100]
 		    ZOrder		    -4
@@ -1800,7 +1836,7 @@ Model {
 		    Block {
 		    BlockType		    Gain
 		    Name		    "Gain"
-		    SID			    "10:27"
+		    SID			    "10:81"
 		    Position		    [125, 54, 165, 86]
 		    ZOrder		    -5
 		    ShowName		    off
@@ -1812,7 +1848,7 @@ Model {
 		    Block {
 		    BlockType		    Fcn
 		    Name		    "Magic Formula"
-		    SID			    "10:28"
+		    SID			    "10:82"
 		    Position		    [335, 65, 395, 95]
 		    ZOrder		    -6
 		    NamePlacement	    "alternate"
@@ -1821,7 +1857,7 @@ Model {
 		    Block {
 		    BlockType		    Sum
 		    Name		    "Sum3"
-		    SID			    "10:29"
+		    SID			    "10:83"
 		    Ports		    [2, 1]
 		    Position		    [255, 70, 275, 90]
 		    ZOrder		    -7
@@ -1841,7 +1877,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "F_w [N]"
-		    SID			    "10:30"
+		    SID			    "10:84"
 		    Position		    [475, 73, 505, 87]
 		    ZOrder		    -8
 		    NamePlacement	    "alternate"
@@ -1850,7 +1886,7 @@ Model {
 		    Block {
 		    BlockType		    Outport
 		    Name		    "slip ratio"
-		    SID			    "10:31"
+		    SID			    "10:85"
 		    Position		    [475, 113, 505, 127]
 		    ZOrder		    -9
 		    NamePlacement	    "alternate"
@@ -1910,17 +1946,16 @@ Model {
 		    DstPort		    2
 		    }
 		    Annotation {
-		    SID			    "10:32"
+		    SID			    "10:86"
 		    Name		    "Note: The SAE definition of the slip ratio kappa is used."
 		    Position		    [187, 140]
-		    ZOrder		    -1
 		    }
 		  }
 		}
 		Block {
 		  BlockType		  Math
 		  Name			  "Math\nFunction"
-		  SID			  "10:33"
+		  SID			  "10:87"
 		  Ports			  [1, 1]
 		  Position		  [550, 145, 580, 175]
 		  ZOrder		  -20
@@ -1933,7 +1968,7 @@ Model {
 		Block {
 		  BlockType		  Mux
 		  Name			  "Mux"
-		  SID			  "10:34"
+		  SID			  "10:88"
 		  Ports			  [6, 1]
 		  Position		  [720, 542, 725, 608]
 		  ZOrder		  -21
@@ -1944,7 +1979,7 @@ Model {
 		Block {
 		  BlockType		  Product
 		  Name			  "Product"
-		  SID			  "10:35"
+		  SID			  "10:89"
 		  Ports			  [2, 1]
 		  Position		  [430, 378, 450, 467]
 		  ZOrder		  -22
@@ -1957,7 +1992,7 @@ Model {
 		Block {
 		  BlockType		  Product
 		  Name			  "Product1"
-		  SID			  "10:36"
+		  SID			  "10:90"
 		  Ports			  [2, 1]
 		  Position		  [445, 263, 465, 327]
 		  ZOrder		  -23
@@ -1970,7 +2005,7 @@ Model {
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "10:37"
+		  SID			  "10:91"
 		  Ports			  [3, 1]
 		  Position		  [385, 145, 415, 175]
 		  ZOrder		  -24
@@ -1993,7 +2028,7 @@ Model {
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum1"
-		  SID			  "10:38"
+		  SID			  "10:92"
 		  Ports			  [2, 1]
 		  Position		  [330, 390, 350, 410]
 		  ZOrder		  -25
@@ -2007,7 +2042,7 @@ Model {
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum2"
-		  SID			  "10:39"
+		  SID			  "10:93"
 		  Ports			  [2, 1]
 		  Position		  [330, 435, 350, 455]
 		  ZOrder		  -26
@@ -2021,7 +2056,7 @@ Model {
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum3"
-		  SID			  "10:40"
+		  SID			  "10:94"
 		  Ports			  [2, 1]
 		  Position		  [390, 270, 410, 290]
 		  ZOrder		  -27
@@ -2035,7 +2070,7 @@ Model {
 		Block {
 		  BlockType		  ToWorkspace
 		  Name			  "To Workspace"
-		  SID			  "10:41"
+		  SID			  "10:95"
 		  Ports			  [1]
 		  Position		  [755, 560, 815, 590]
 		  ZOrder		  -28
@@ -2046,7 +2081,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "sensor out"
-		  SID			  "10:42"
+		  SID			  "10:96"
 		  Position		  [795, 288, 825, 302]
 		  ZOrder		  -29
 		  IconDisplay		  "Port number"
@@ -2054,7 +2089,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "mech fb out [rad/s]"
-		  SID			  "10:43"
+		  SID			  "10:97"
 		  Position		  [780, 443, 810, 457]
 		  ZOrder		  -30
 		  Port			  "2"
@@ -2071,7 +2106,6 @@ Model {
 		  Labels		  [0, 0]
 		  SrcBlock		  "Integrator2"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Bus\nCreator"
 		  DstPort		  2
 		}
@@ -2088,7 +2122,7 @@ Model {
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector5"
 		  SrcPort		  1
-		  Points		  [0, 0; 85, 0]
+		  Points		  [85, 0]
 		  Branch {
 		    Points		    [0, 150]
 		    DstBlock		    "Mux"
@@ -2100,17 +2134,15 @@ Model {
 		  }
 		}
 		Line {
-		  Labels		  [2, 1]
+		  Labels		  [-1, 0]
 		  SrcBlock		  "mech power in [Nm]"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Bus\nSelector5"
 		  DstPort		  1
 		}
 		Line {
 		  SrcBlock		  "Bus\nCreator"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "mech fb out [rad/s]"
 		  DstPort		  1
 		}
@@ -2136,7 +2168,7 @@ Model {
 		  Name			  "speed [rad/s]"
 		  SrcBlock		  "Integrator1"
 		  SrcPort		  1
-		  Points		  [0, 0; 30, 0]
+		  Points		  [30, 0]
 		  Branch {
 		    Points		    [0, 50]
 		    DstBlock		    "Integrator2"
@@ -2198,7 +2230,6 @@ Model {
 		Line {
 		  SrcBlock		  "Sum2"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Product"
 		  DstPort		  2
 		}
@@ -2258,7 +2289,6 @@ Model {
 		Line {
 		  SrcBlock		  "Constant2"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Product1"
 		  DstPort		  2
 		}
@@ -2281,7 +2311,7 @@ Model {
 		  Labels		  [0, 1]
 		  SrcBlock		  "Integrator3"
 		  SrcPort		  1
-		  Points		  [0, 0; 65, 0]
+		  Points		  [65, 0]
 		  Branch {
 		    Points		    [0, 275]
 		    DstBlock		    "Mux"
@@ -2301,13 +2331,14 @@ Model {
 		    }
 		  }
 		  Branch {
-		    Points		    [125, 0]
+		    Points		    [110, 0]
 		    Branch {
+		    Points		    [5, 0]
 		    DstBlock		    "Bus\nCreator1"
 		    DstPort		    1
 		    }
 		    Branch {
-		    Points		    [-15, 0; 0, -60]
+		    Points		    [0, -60]
 		    DstBlock		    "Goto"
 		    DstPort		    1
 		    }
@@ -2320,11 +2351,21 @@ Model {
 		  DstPort		  1
 		}
 		Line {
+		  Name			  "slipp ratio"
 		  SrcBlock		  "Magic Formula"
 		  SrcPort		  2
-		  Points		  [0, 290]
-		  DstBlock		  "Mux"
-		  DstPort		  5
+		  Points		  [0, 37]
+		  Branch {
+		    Points		    [0, 253]
+		    DstBlock		    "Mux"
+		    DstPort		    5
+		  }
+		  Branch {
+		    Labels		    [1, 1]
+		    Points		    [412, 0; 0, -32]
+		    DstBlock		    "Bus\nCreator1"
+		    DstPort		    2
+		  }
 		}
 		Line {
 		  SrcBlock		  "Air resistance2"
@@ -2333,16 +2374,14 @@ Model {
 		  DstPort		  2
 		}
 		Annotation {
-		  SID			  "10:44"
+		  SID			  "10:99"
 		  Name			  "\"feedback\" from\nthe drive shafts"
 		  Position		  [57, 386]
-		  ZOrder		  -1
 		}
 		Annotation {
-		  SID			  "10:45"
+		  SID			  "10:98"
 		  Name			  "\"feedback\" to\nthe final drive"
 		  Position		  [816, 404]
-		  ZOrder		  -2
 		}
 	      }
 	    }
@@ -2362,11 +2401,11 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		33
+		$ObjectID		34
 		$ClassName		"Simulink.Mask"
 		Object {
 		  $PropName		  "Parameters"
-		  $ObjectID		  34
+		  $ObjectID		  35
 		  $ClassName		  "Simulink.MaskParameter"
 		  Type			  "edit"
 		  Name			  "brake_gain"
@@ -2538,7 +2577,7 @@ Model {
 	    Line {
 	      SrcBlock		      "local controller"
 	      SrcPort		      2
-	      Points		      [5, 0; 0, 80; -240, 0]
+	      Points		      [9, 0; 0, 80; -244, 0]
 	      DstBlock		      "chassis"
 	      DstPort		      1
 	    }
@@ -2557,7 +2596,7 @@ Model {
 	    Line {
 	      SrcBlock		      "chassis"
 	      SrcPort		      1
-	      Points		      [20, 0; 0, -130; -255, 0]
+	      Points		      [209, 0; 0, -264; -634, 0; 0, 89]
 	      DstBlock		      "local controller"
 	      DstPort		      2
 	    }
@@ -2595,7 +2634,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    35
+	    $ObjectID		    36
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -2605,28 +2644,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		36
+		$ObjectID		37
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		37
+		$ObjectID		38
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		38
+		$ObjectID		39
 		Type			"edit"
 		Name			"k_c"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_c"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		40
 		Type			"edit"
 		Name			"c_c"
 		Prompt			"damping [Nms/rad]"
@@ -3036,23 +3075,21 @@ Model {
 	      SID		      "11:19"
 	      Name		      "\"feedback\" from\nthe gearbox"
 	      Position		      [56, 319]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "11:20"
 	      Name		      "\"feedback\" to\nthe flywheel"
 	      Position		      [721, 324]
-	      ZOrder		      -2
 	    }
 	  }
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "controller"
-	  SID			  "12"
+	  SID			  "83"
 	  Ports			  [2, 2]
 	  Position		  [495, 17, 645, 88]
-	  ZOrder		  -9
+	  ZOrder		  2
 	  ForegroundColor	  "blue"
 	  AncestorBlock		  "capsim_lib/Controller/controller_template"
 	  LibraryVersion	  "*"
@@ -3065,7 +3102,7 @@ Model {
 	  MaskHideContents	  off
 	  System {
 	    Name		    "controller"
-	    Location		    [246, 119, 1500, 1085]
+	    Location		    [0, 24, 1647, 978]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -3073,16 +3110,16 @@ Model {
 	    PaperOrientation	    "landscape"
 	    PaperPositionMode	    "auto"
 	    PaperType		    "A4"
-	    PaperUnits		    "centimeters"
+	    PaperUnits		    "inches"
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "53"
+	    SIDHighWatermark	    "91"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "driver cmd in"
-	      SID		      "12:1"
+	      SID		      "83:1"
 	      Position		      [25, 103, 55, 117]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -3090,7 +3127,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "sensor in"
-	      SID		      "12:2"
+	      SID		      "83:2"
 	      Position		      [15, 498, 45, 512]
 	      ZOrder		      -2
 	      Port		      "2"
@@ -3099,7 +3136,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "4"
-	      SID		      "12:3"
+	      SID		      "83:3"
 	      Position		      [200, 96, 235, 124]
 	      ZOrder		      -3
 	      Gain		      "T_max"
@@ -3116,7 +3153,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator"
-	      SID		      "12:4"
+	      SID		      "83:4"
 	      Ports		      [3, 1]
 	      Position		      [930, 378, 940, 562]
 	      ZOrder		      -4
@@ -3127,7 +3164,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator1"
-	      SID		      "12:5"
+	      SID		      "83:5"
 	      Ports		      [1, 1]
 	      Position		      [865, 511, 870, 549]
 	      ZOrder		      -5
@@ -3145,7 +3182,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator3"
-	      SID		      "12:6"
+	      SID		      "83:6"
 	      Ports		      [1, 1]
 	      Position		      [865, 392, 870, 428]
 	      ZOrder		      -6
@@ -3163,7 +3200,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator4"
-	      SID		      "12:7"
+	      SID		      "83:7"
 	      Ports		      [1, 1]
 	      Position		      [265, 546, 270, 584]
 	      ZOrder		      -7
@@ -3174,7 +3211,7 @@ Model {
 	    Block {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator5"
-	      SID		      "12:8"
+	      SID		      "83:8"
 	      Ports		      [1, 1]
 	      Position		      [865, 451, 870, 489]
 	      ZOrder		      -8
@@ -3192,7 +3229,7 @@ Model {
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector"
-	      SID		      "12:9"
+	      SID		      "83:9"
 	      Ports		      [1, 3]
 	      Position		      [90, 416, 95, 594]
 	      ZOrder		      -9
@@ -3220,7 +3257,7 @@ Model {
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector1"
-	      SID		      "12:10"
+	      SID		      "83:10"
 	      Ports		      [1, 2]
 	      Position		      [170, 426, 175, 464]
 	      ZOrder		      -10
@@ -3242,7 +3279,7 @@ Model {
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector3"
-	      SID		      "12:11"
+	      SID		      "83:11"
 	      Ports		      [1, 2]
 	      Position		      [170, 486, 175, 524]
 	      ZOrder		      -11
@@ -3264,15 +3301,21 @@ Model {
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector4"
-	      SID		      "12:12"
-	      Ports		      [1, 1]
+	      SID		      "83:12"
+	      Ports		      [1, 2]
 	      Position		      [170, 546, 175, 584]
 	      ZOrder		      -12
 	      ShowName		      off
-	      OutputSignals	      "velocity [m/s]"
+	      OutputSignals	      "velocity [m/s],slipp ratio"
 	      Port {
 		PortNumber		1
 		Name			"<velocity [m/s]>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<slipp ratio>"
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
@@ -3280,7 +3323,7 @@ Model {
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector5"
-	      SID		      "12:13"
+	      SID		      "83:13"
 	      Ports		      [1, 1]
 	      Position		      [80, 91, 85, 129]
 	      ZOrder		      -13
@@ -3296,7 +3339,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "12:14"
+	      SID		      "83:14"
 	      Position		      [720, 519, 740, 541]
 	      ZOrder		      -14
 	      ShowName		      off
@@ -3309,27 +3352,9 @@ Model {
 	      }
 	    }
 	    Block {
-	      BlockType		      FromWorkspace
-	      Name		      "From\nWorkspace1"
-	      SID		      "12:15"
-	      Position		      [610, 458, 705, 482]
-	      ZOrder		      -15
-	      NamePlacement	      "alternate"
-	      ShowName		      off
-	      VariableName	      "[InputT InputG]"
-	      SampleTime	      "0"
-	      ZeroCross		      on
-	      Port {
-		PortNumber		1
-		Name			"gear number"
-		RTWStorageClass		"Auto"
-		DataLoggingNameMode	"SignalName"
-	      }
-	    }
-	    Block {
 	      BlockType		      Mux
 	      Name		      "Mux"
-	      SID		      "12:16"
+	      SID		      "83:16"
 	      Ports		      [4, 1]
 	      Position		      [935, 589, 940, 661]
 	      ZOrder		      -16
@@ -3339,7 +3364,7 @@ Model {
 	    Block {
 	      BlockType		      Mux
 	      Name		      "Mux1"
-	      SID		      "12:17"
+	      SID		      "83:17"
 	      Ports		      [4, 1]
 	      Position		      [470, 68, 475, 152]
 	      ZOrder		      -17
@@ -3349,7 +3374,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Reference states"
-	      SID		      "12:18"
+	      SID		      "83:18"
 	      Ports		      [1, 4]
 	      Position		      [310, 70, 425, 150]
 	      ZOrder		      -18
@@ -3362,7 +3387,7 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"Reference states"
-		Location		[123, 311, 1266, 787]
+		Location		[85, 87, 1597, 1005]
 		Open			off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -3370,7 +3395,7 @@ Model {
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
 		PaperType		"A4"
-		PaperUnits		"centimeters"
+		PaperUnits		"inches"
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
@@ -3378,7 +3403,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
-		  SID			  "12:19"
+		  SID			  "83:19"
 		  Position		  [25, 48, 55, 62]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -3386,8 +3411,8 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "1"
-		  SID			  "12:20"
-		  Position		  [755, 126, 790, 154]
+		  SID			  "83:20"
+		  Position		  [795, 105, 920, 165]
 		  ZOrder		  -2
 		  Gain			  "i_f*gearRatio(1)"
 		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3397,7 +3422,7 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "2"
-		  SID			  "12:21"
+		  SID			  "83:21"
 		  Position		  [155, 51, 190, 79]
 		  ZOrder		  -3
 		  Gain			  "1/tau_e"
@@ -3408,8 +3433,8 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "5"
-		  SID			  "12:22"
-		  Position		  [700, 61, 735, 89]
+		  SID			  "83:22"
+		  Position		  [655, 63, 735, 87]
 		  ZOrder		  -4
 		  Gain			  "1/r_w"
 		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3419,8 +3444,8 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "6"
-		  SID			  "12:23"
-		  Position		  [430, 121, 465, 149]
+		  SID			  "83:23"
+		  Position		  [470, 138, 590, 272]
 		  ZOrder		  -5
 		  Gain			  "i_f*gearRatio(1)/k_d"
 		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
@@ -3430,7 +3455,7 @@ Model {
 		Block {
 		  BlockType		  Sum
 		  Name			  "Add"
-		  SID			  "12:24"
+		  SID			  "83:24"
 		  Ports			  [2, 1]
 		  Position		  [95, 47, 125, 78]
 		  ZOrder		  -6
@@ -3442,7 +3467,7 @@ Model {
 		Block {
 		  BlockType		  Fcn
 		  Name			  "Fcn"
-		  SID			  "12:25"
+		  SID			  "83:25"
 		  Position		  [485, 60, 545, 90]
 		  ZOrder		  -7
 		  Expr			  "(i_f*gearRatio(1)/r_w*u(1)-0.5*Rho_a*c_w*A_a*u(2)^2-mass*g*c_r)/(mass+i_f^2*gearRatio(1)^2/r_w^2*J_e)"
@@ -3450,7 +3475,7 @@ Model {
 		Block {
 		  BlockType		  Integrator
 		  Name			  "Integrator"
-		  SID			  "12:26"
+		  SID			  "83:26"
 		  Ports			  [1, 1]
 		  Position		  [570, 60, 600, 90]
 		  ZOrder		  -8
@@ -3465,7 +3490,7 @@ Model {
 		Block {
 		  BlockType		  Integrator
 		  Name			  "Integrator1"
-		  SID			  "12:27"
+		  SID			  "83:27"
 		  Ports			  [1, 1]
 		  Position		  [215, 50, 245, 80]
 		  ZOrder		  -9
@@ -3474,7 +3499,7 @@ Model {
 		Block {
 		  BlockType		  Mux
 		  Name			  "Mux6"
-		  SID			  "12:28"
+		  SID			  "83:28"
 		  Ports			  [2, 1]
 		  Position		  [390, 56, 395, 94]
 		  ZOrder		  -10
@@ -3485,16 +3510,16 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Drive shaft torsion [rad]"
-		  SID			  "12:29"
-		  Position		  [540, 128, 570, 142]
+		  SID			  "83:29"
+		  Position		  [945, 198, 975, 212]
 		  ZOrder		  -11
 		  IconDisplay		  "Port number"
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "Engine speed [rad/s]"
-		  SID			  "12:30"
-		  Position		  [840, 130, 865, 150]
+		  SID			  "83:30"
+		  Position		  [945, 127, 980, 143]
 		  ZOrder		  -12
 		  NamePlacement		  "alternate"
 		  Port			  "2"
@@ -3503,8 +3528,8 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Wheel speed [rad/s]"
-		  SID			  "12:31"
-		  Position		  [830, 68, 860, 82]
+		  SID			  "83:31"
+		  Position		  [945, 68, 975, 82]
 		  ZOrder		  -13
 		  Port			  "3"
 		  IconDisplay		  "Port number"
@@ -3512,7 +3537,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Engine torque [Nm]"
-		  SID			  "12:32"
+		  SID			  "83:32"
 		  Position		  [435, 18, 465, 32]
 		  ZOrder		  -14
 		  Port			  "4"
@@ -3549,13 +3574,13 @@ Model {
 		Line {
 		  SrcBlock		  "5"
 		  SrcPort		  1
-		  Points		  [5, 0]
+		  Points		  [26, 0]
 		  Branch {
 		    DstBlock		    "Wheel speed [rad/s]"
 		    DstPort		    1
 		  }
 		  Branch {
-		    Points		    [-5, 0]
+		    Points		    [0, 60]
 		    DstBlock		    "1"
 		    DstPort		    1
 		  }
@@ -3588,7 +3613,7 @@ Model {
 		    DstPort		    1
 		    }
 		    Branch {
-		    Points		    [0, 70]
+		    Points		    [0, 140]
 		    DstBlock		    "6"
 		    DstPort		    1
 		    }
@@ -3621,8 +3646,16 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Terminator
+	      Name		      "Terminator1"
+	      SID		      "83:58"
+	      Position		      [265, 595, 285, 615]
+	      ZOrder		      1
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Terminator
 	      Name		      "Terminator3"
-	      SID		      "12:33"
+	      SID		      "83:33"
 	      Position		      [255, 425, 275, 445]
 	      ZOrder		      -19
 	      ShowName		      off
@@ -3630,7 +3663,7 @@ Model {
 	    Block {
 	      BlockType		      Terminator
 	      Name		      "Terminator5"
-	      SID		      "12:34"
+	      SID		      "83:34"
 	      Position		      [255, 485, 275, 505]
 	      ZOrder		      -20
 	      ShowName		      off
@@ -3638,7 +3671,7 @@ Model {
 	    Block {
 	      BlockType		      Terminator
 	      Name		      "Terminator6"
-	      SID		      "12:35"
+	      SID		      "83:35"
 	      Position		      [265, 505, 285, 525]
 	      ZOrder		      -21
 	      ShowName		      off
@@ -3646,7 +3679,7 @@ Model {
 	    Block {
 	      BlockType		      ToWorkspace
 	      Name		      "To Workspace"
-	      SID		      "12:36"
+	      SID		      "83:36"
 	      Ports		      [1]
 	      Position		      [985, 611, 1055, 639]
 	      ZOrder		      -22
@@ -3658,9 +3691,9 @@ Model {
 	    Block {
 	      BlockType		      ToWorkspace
 	      Name		      "To Workspace1"
-	      SID		      "12:37"
+	      SID		      "83:37"
 	      Ports		      [1]
-	      Position		      [730, 285, 790, 315]
+	      Position		      [865, 265, 925, 295]
 	      ZOrder		      -23
 	      ShowName		      off
 	      VariableName	      "obsstates"
@@ -3670,8 +3703,8 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "controller"
-	      SID		      "12:38"
-	      Ports		      [3, 2]
+	      SID		      "83:38"
+	      Ports		      [4, 3]
 	      Position		      [440, 244, 695, 316]
 	      ZOrder		      -24
 	      MinAlgLoopOccurrences   off
@@ -3687,34 +3720,40 @@ Model {
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
+	      Port {
+		PortNumber		3
+		Name			"gear number"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
 	      System {
 		Name			"controller"
-		Location		[0, 24, 1280, 776]
-		Open			off
+		Location		[0, 24, 1647, 978]
+		Open			on
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"usletter"
+		PaperType		"A4"
 		PaperUnits		"inches"
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"116"
+		ZoomFactor		"80"
 		Block {
 		  BlockType		  Inport
 		  Name			  "x_ref"
-		  SID			  "12:39"
-		  Position		  [70, 388, 100, 402]
+		  SID			  "83:39"
+		  Position		  [75, 53, 105, 67]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
 		}
 		Block {
 		  BlockType		  Inport
 		  Name			  "Torque demand from driver"
-		  SID			  "12:40"
-		  Position		  [70, 128, 100, 142]
+		  SID			  "83:40"
+		  Position		  [70, 273, 100, 287]
 		  ZOrder		  -2
 		  Port			  "2"
 		  IconDisplay		  "Port number"
@@ -3722,106 +3761,615 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "Engine speed sensor"
-		  SID			  "12:41"
-		  Position		  [70, 268, 100, 282]
+		  SID			  "83:41"
+		  Position		  [75, 188, 105, 202]
 		  ZOrder		  -3
 		  Port			  "3"
 		  IconDisplay		  "Port number"
 		}
 		Block {
-		  BlockType		  Ground
-		  Name			  "Ground"
-		  SID			  "12:42"
-		  Position		  [695, 175, 715, 195]
-		  ZOrder		  -4
+		  BlockType		  Inport
+		  Name			  "sensors"
+		  SID			  "83:54"
+		  Position		  [5, 618, 35, 632]
+		  ZOrder		  2
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "83:56"
+		  Ports			  [1, 1]
+		  Position		  [105, 603, 120, 647]
+		  ZOrder		  3
+		  ShowName		  off
+		  OutputSignals		  "chassis.slipp ratio"
+		  Port {
+		    PortNumber		    1
+		    Name		    "<slipp ratio>"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  FromWorkspace
+		  Name			  "From\nWorkspace1"
+		  SID			  "83:15"
+		  Position		  [730, 123, 825, 147]
+		  ZOrder		  24
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  VariableName		  "[InputT InputG]"
+		  SampleTime		  "0"
+		  ZeroCross		  on
 		}
 		Block {
 		  BlockType		  Ground
 		  Name			  "Ground1"
-		  SID			  "12:43"
-		  Position		  [830, 360, 850, 380]
+		  SID			  "83:43"
+		  Position		  [855, 40, 875, 60]
 		  ZOrder		  -5
 		}
 		Block {
 		  BlockType		  ManualSwitch
 		  Name			  "Manual Switch"
-		  SID			  "12:44"
-		  Position		  [790, 157, 820, 193]
+		  SID			  "83:44"
+		  Position		  [825, 272, 855, 308]
 		  ZOrder		  -6
+		  CurrentSetting	  "0"
+		}
+		Block {
+		  BlockType		  ManualSwitch
+		  Name			  "Manual Switch1"
+		  SID			  "83:84"
+		  Position		  [885, 167, 915, 203]
+		  ZOrder		  23
+		  CurrentSetting	  "0"
+		}
+		Block {
+		  BlockType		  ManualSwitch
+		  Name			  "Manual Switch2"
+		  SID			  "83:91"
+		  Position		  [900, 262, 930, 298]
+		  ZOrder		  31
+		  CurrentSetting	  "0"
+		}
+		Block {
+		  BlockType		  MinMax
+		  Name			  "MinMax"
+		  SID			  "83:88"
+		  Ports			  [2, 1]
+		  Position		  [770, 242, 800, 273]
+		  ZOrder		  28
+		  Inputs		  "2"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
 		}
 		Block {
 		  BlockType		  Mux
 		  Name			  "Mux"
-		  SID			  "12:45"
+		  SID			  "83:45"
 		  Ports			  [4, 1]
-		  Position		  [915, 341, 920, 404]
+		  Position		  [940, 21, 945, 84]
 		  ZOrder		  -7
 		  ShowName		  off
 		  DisplayOption		  "bar"
 		}
 		Block {
-		  BlockType		  Terminator
-		  Name			  "Terminator1"
-		  SID			  "12:46"
-		  Position		  [150, 385, 170, 405]
-		  ZOrder		  -8
+		  BlockType		  Mux
+		  Name			  "Mux1"
+		  SID			  "83:90"
+		  Ports			  [2, 1]
+		  Position		  [435, 341, 440, 379]
+		  ZOrder		  30
 		  ShowName		  off
+		  Inputs		  "2"
+		  DisplayOption		  "bar"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "PID Controller"
+		  SID			  "83:78"
+		  Ports			  [2, 1]
+		  Position		  [365, 502, 405, 538]
+		  ZOrder		  19
+		  LibraryVersion	  "1.281"
+		  SourceBlock		  "simulink/Continuous/PID Controller"
+		  SourceType		  "PID 1dof"
+		  Controller		  "PID"
+		  TimeDomain		  "Continuous-time"
+		  SampleTime		  "1"
+		  IntegratorMethod	  "Forward Euler"
+		  FilterMethod		  "Forward Euler"
+		  Form			  "Parallel"
+		  P			  "1807.69288725995"
+		  I			  "7225.43584206017"
+		  D			  "112.335024874473"
+		  N			  "1322.21781915865"
+		  InitialConditionSource  "internal"
+		  InitialConditionForIntegrator	"0"
+		  InitialConditionForFilter "0"
+		  ExternalReset		  "none"
+		  IgnoreLimit		  off
+		  ZeroCross		  on
+		  LimitOutput		  on
+		  UpperSaturationLimit	  "T_max"
+		  LowerSaturationLimit	  "0"
+		  LinearizeAsGain	  off
+		  AntiWindupMode	  "back-calculation"
+		  Kb			  "0.2"
+		  TrackingMode		  on
+		  Kt			  "0.2"
+		  RndMeth		  "Floor"
+		  SaturateOnIntegerOverflow off
+		  LockScale		  off
+		  PParamMin		  "[]"
+		  PParamMax		  "[]"
+		  PParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  IParamMin		  "[]"
+		  IParamMax		  "[]"
+		  IParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  DParamMin		  "[]"
+		  DParamMax		  "[]"
+		  DParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  NParamMin		  "[]"
+		  NParamMax		  "[]"
+		  NParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  KbParamMin		  "[]"
+		  KbParamMax		  "[]"
+		  KbParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  KtParamMin		  "[]"
+		  KtParamMax		  "[]"
+		  KtParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  POutMin		  "[]"
+		  POutMax		  "[]"
+		  POutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  IOutMin		  "[]"
+		  IOutMax		  "[]"
+		  IOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  DOutMin		  "[]"
+		  DOutMax		  "[]"
+		  DOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  NOutMin		  "[]"
+		  NOutMax		  "[]"
+		  NOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  KbOutMin		  "[]"
+		  KbOutMax		  "[]"
+		  KbOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  KtOutMin		  "[]"
+		  KtOutMax		  "[]"
+		  KtOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  IntegratorOutMin	  "[]"
+		  IntegratorOutMax	  "[]"
+		  IntegratorOutDataTypeStr "Inherit: Inherit via internal rule"
+		  FilterOutMin		  "[]"
+		  FilterOutMax		  "[]"
+		  FilterOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumOutMin		  "[]"
+		  SumOutMax		  "[]"
+		  SumOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI1OutMin		  "[]"
+		  SumI1OutMax		  "[]"
+		  SumI1OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI2OutMin		  "[]"
+		  SumI2OutMax		  "[]"
+		  SumI2OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI3OutMin		  "[]"
+		  SumI3OutMax		  "[]"
+		  SumI3OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumDOutMin		  "[]"
+		  SumDOutMax		  "[]"
+		  SumDOutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumAccumDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI1AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI2AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumI3AccumDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SumDAccumDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturationOutMin	  "[]"
+		  SaturationOutMax	  "[]"
+		  SaturationOutDataTypeStr "Inherit: Same as input"
+		  IntegratorContinuousStateAttributes "''"
+		  IntegratorStateMustResolveToSignalObject off
+		  IntegratorRTWStateStorageClass "Auto"
+		  FilterContinuousStateAttributes "''"
+		  FilterStateMustResolveToSignalObject off
+		  FilterRTWStateStorageClass "Auto"
+		  Port {
+		    PortNumber		    1
+		    Name		    "T_req"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation1"
+		  SID			  "83:83"
+		  Ports			  [1, 1]
+		  Position		  [195, 560, 225, 590]
+		  ZOrder		  22
+		  BlockRotation		  270
+		  InputPortMap		  "u0"
+		  UpperLimit		  "1"
+		  LowerLimit		  "-inf"
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "Scope"
+		  SID			  "83:85"
+		  Ports			  [1]
+		  Position		  [220, 199, 250, 231]
+		  ZOrder		  25
+		  Floating		  off
+		  Location		  [188, 390, 512, 629]
+		  Open			  on
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  List {
+		    ListType		    ScopeGraphics
+		    FigureColor		    "[0.5 0.5 0.5]"
+		    AxesColor		    "[0 0 0]"
+		    AxesTickColor	    "[1 1 1]"
+		    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		    LineStyles		    "-|-|-|-|-|-"
+		    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+		    MarkerStyles	    "none|none|none|none|none|none"
+		  }
+		  ShowLegends		  off
+		  TimeRange		  "100"
+		  YMin			  "-50"
+		  YMax			  "400"
+		  DataFormat		  "StructureWithTime"
+		  SampleTime		  "0"
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "Scope1"
+		  SID			  "83:86"
+		  Ports			  [1]
+		  Position		  [220, 124, 250, 156]
+		  ZOrder		  26
+		  Floating		  off
+		  Location		  [442, 533, 766, 772]
+		  Open			  off
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  List {
+		    ListType		    ScopeGraphics
+		    FigureColor		    "[0.5 0.5 0.5]"
+		    AxesColor		    "[0 0 0]"
+		    AxesTickColor	    "[1 1 1]"
+		    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		    LineStyles		    "-|-|-|-|-|-"
+		    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+		    MarkerStyles	    "none|none|none|none|none|none"
+		  }
+		  ShowLegends		  off
+		  SaveName		  "ScopeData1"
+		  DataFormat		  "StructureWithTime"
+		  SampleTime		  "0"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum"
+		  SID			  "83:77"
+		  Ports			  [2, 1]
+		  Position		  [200, 510, 220, 530]
+		  ZOrder		  18
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "e"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
 		}
 		Block {
 		  BlockType		  Terminator
-		  Name			  "Terminator3"
-		  SID			  "12:47"
-		  Position		  [150, 265, 170, 285]
-		  ZOrder		  -9
+		  Name			  "Terminator1"
+		  SID			  "83:62"
+		  Position		  [280, 50, 300, 70]
+		  ZOrder		  7
 		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "desierd slipp"
+		  SID			  "83:76"
+		  Position		  [105, 505, 135, 535]
+		  ZOrder		  17
+		  Value			  "0.3"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "gear changer"
+		  SID			  "83:71"
+		  Ports			  [1, 1]
+		  Position		  [730, 177, 795, 213]
+		  ZOrder		  16
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "gear changer"
+		    Location		    [0, 24, 1280, 776]
+		    Open		    off
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "N"
+		    SID			    "83:72"
+		    Position		    [590, 273, 620, 287]
+		    ZOrder		    16
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "N[rad/s]"
+		    PropagatedSignals	    "speed [rad/s]"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    "83:69"
+		    Position		    [610, 365, 710, 395]
+		    ZOrder		    14
+		    Value		    "max(gearNumber)"
+		    }
+		    Block {
+		    BlockType		    Mux
+		    Name		    "Mux1"
+		    SID			    "83:68"
+		    Ports		    [3, 1]
+		    Position		    [740, 341, 745, 389]
+		    ZOrder		    13
+		    ShowName		    off
+		    Inputs		    "3"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    TransportDelay
+		    Name		    "Transport\nDelay"
+		    SID			    "83:70"
+		    Ports		    [1, 1]
+		    Position		    [630, 305, 660, 335]
+		    ZOrder		    15
+		    DelayTime		    "0.07"
+		    }
+		    Block {
+		    BlockType		    MATLABFcn
+		    Name		    "gear changer"
+		    SID			    "83:67"
+		    Ports		    [1, 1]
+		    Position		    [790, 350, 860, 380]
+		    ZOrder		    12
+		    MATLABFcn		    "gearchange(u(1),u(2),u(3))"
+		    }
+		    Block {
+		    BlockType		    Scope
+		    Name		    "gear s"
+		    SID			    "83:74"
+		    Ports		    [2]
+		    Position		    [950, 271, 980, 304]
+		    ZOrder		    18
+		    Floating		    off
+		    Location		    [4, 53, 1918, 1051]
+		    Open		    off
+		    NumInputPorts	    "2"
+		    List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		    axes2		    "%<SignalLabel>"
+		    }
+		    List {
+		    ListType		    ScopeGraphics
+		    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+		    AxesColor		    "[0 0 0]"
+		    AxesTickColor	    "[1 1 1]"
+		    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		    LineStyles		    "-|-|-|-|-|-"
+		    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+		    MarkerStyles	    "none|none|none|none|none|none"
+		    }
+		    ShowLegends		    on
+		    LegendLocations	    " 0.9306     0.93925    0.050418    0.022044\n0.91445     0.46425    0.066614    0.022044"
+		    YMin		    "-5~-5"
+		    YMax		    "5~5"
+		    SaveName		    "ScopeData7"
+		    DataFormat		    "StructureWithTime"
+		    LimitDataPoints	    off
+		    SampleTime		    "0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "gear"
+		    SID			    "83:73"
+		    Position		    [960, 358, 990, 372]
+		    ZOrder		    17
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "gear changer"
+		    SrcPort		    1
+		    Points		    [12, 0]
+		    Branch {
+		    Points		    [26, 0]
+		    Branch {
+		    Points		    [0, -70]
+		    DstBlock		    "gear s"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "gear"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    Points		    [0, 56; -282, 0; 0, -101]
+		    DstBlock		    "Transport\nDelay"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    DstBlock		    "Mux1"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Transport\nDelay"
+		    SrcPort		    1
+		    Points		    [24, 0; 0, 30]
+		    DstBlock		    "Mux1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "N[rad/s]"
+		    SrcBlock		    "N"
+		    SrcPort		    1
+		    Points		    [100, 0]
+		    Branch {
+		    Labels		    [1, 1]
+		    DstBlock		    "gear s"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Mux1"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Mux1"
+		    SrcPort		    1
+		    DstBlock		    "gear changer"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    SID			    "83:75"
+		    Name		    "gear"
+		    Position		    [905, 370]
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "slipp1"
+		  SID			  "83:89"
+		  Ports			  [2]
+		  Position		  [470, 336, 500, 369]
+		  ZOrder		  29
+		  Floating		  off
+		  Location		  [5, 45, 1925, 1147]
+		  Open			  on
+		  NumInputPorts		  "2"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		    axes2		    "%<SignalLabel>"
+		  }
+		  List {
+		    ListType		    ScopeGraphics
+		    FigureColor		    "[0.501960784313725 0.501960784313725 0.501960784313725]"
+		    AxesColor		    "[0 0 0]"
+		    AxesTickColor	    "[1 1 1]"
+		    LineColors		    "[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+		    LineStyles		    "-|-|-|-|-|-"
+		    LineWidths		    "[0.5 0.5 0.5 0.5 0.5 0.5]"
+		    MarkerStyles	    "none|none|none|none|none|none"
+		  }
+		  ShowLegends		  on
+		  LegendLocations	  "0.87732     0.91271    0.059375    0.018451\n0.90409     0.45129    0.096354    0.032668"
+		  TimeRange		  "100"
+		  YMin			  "-0.5~-25"
+		  YMax			  "3~400"
+		  SaveName		  "ScopeData2"
+		  DataFormat		  "StructureWithTime"
+		  LimitDataPoints	  off
+		  SampleTime		  "0"
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "Torque demand from controller"
-		  SID			  "12:48"
-		  Position		  [980, 168, 1010, 182]
+		  SID			  "83:48"
+		  Position		  [1005, 283, 1035, 297]
 		  ZOrder		  -10
 		  IconDisplay		  "Port number"
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "Observed states"
-		  SID			  "12:49"
-		  Position		  [980, 368, 1010, 382]
+		  SID			  "83:49"
+		  Position		  [1005, 48, 1035, 62]
 		  ZOrder		  -11
 		  Port			  "2"
 		  IconDisplay		  "Port number"
 		}
-		Line {
-		  SrcBlock		  "Torque demand from driver"
-		  SrcPort		  1
-		  Points		  [670, 0]
-		  DstBlock		  "Manual Switch"
-		  DstPort		  1
+		Block {
+		  BlockType		  Outport
+		  Name			  "gear"
+		  SID			  "83:59"
+		  Position		  [995, 178, 1025, 192]
+		  ZOrder		  5
+		  Port			  "3"
+		  IconDisplay		  "Port number"
 		}
 		Line {
 		  SrcBlock		  "Manual Switch"
 		  SrcPort		  1
-		  DstBlock		  "Torque demand from controller"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Engine speed sensor"
-		  SrcPort		  1
-		  DstBlock		  "Terminator3"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "x_ref"
-		  SrcPort		  1
-		  DstBlock		  "Terminator1"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Ground"
-		  SrcPort		  1
-		  DstBlock		  "Manual Switch"
+		  DstBlock		  "Manual Switch2"
 		  DstPort		  2
+		}
+		Line {
+		  Name			  "T_req"
+		  SrcBlock		  "PID Controller"
+		  SrcPort		  1
+		  Points		  [30, 0]
+		  Branch {
+		    Points		    [304, 0; 0, -220]
+		    Branch {
+		    Points		    [0, -35]
+		    DstBlock		    "MinMax"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Manual Switch"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    Labels		    [3, 1]
+		    Points		    [0, -56; -27, 0; 0, -94]
+		    DstBlock		    "Mux1"
+		    DstPort		    2
+		  }
 		}
 		Line {
 		  SrcBlock		  "Ground1"
@@ -3858,29 +4406,157 @@ Model {
 		  DstBlock		  "Observed states"
 		  DstPort		  1
 		}
-		Annotation {
-		  SID			  "12:50"
-		  Name			  "Construct an observer for the vehicle using the engine speed sensor. \nThen use the given reference stat"
-		  "es (x_ref) and design a state feedback controller to damp the driveline oscillations. "
-		  Position		  [543, 44]
-		  ZOrder		  -1
-		  FontName		  "Arial"
-		  FontSize		  20
+		Line {
+		  SrcBlock		  "sensors"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<slipp ratio>"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  Points		  [85, 0]
+		  Branch {
+		    DstBlock		    "Saturation1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [48, 0; 0, -28; 197, 0]
+		    DstBlock		    "slipp1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "x_ref"
+		  SrcPort		  1
+		  DstBlock		  "Terminator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Engine speed sensor"
+		  SrcPort		  1
+		  Points		  [77, 0]
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Scope1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "gear changer"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Manual Switch1"
+		  SrcPort		  1
+		  DstBlock		  "gear"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "desierd slipp"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "e"
+		  Labels		  [1, 0]
+		  SrcBlock		  "Sum"
+		  SrcPort		  1
+		  Points		  [125, 0]
+		  DstBlock		  "PID Controller"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Saturation1"
+		  SrcPort		  1
+		  DstBlock		  "Sum"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "gear changer"
+		  SrcPort		  1
+		  DstBlock		  "Manual Switch1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From\nWorkspace1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 40]
+		  DstBlock		  "Manual Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "MinMax"
+		  SrcPort		  1
+		  Points		  [5, 0]
+		  DstBlock		  "Manual Switch"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Mux1"
+		  SrcPort		  1
+		  DstBlock		  "slipp1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Manual Switch2"
+		  SrcPort		  1
+		  Points		  [32, 0; 0, 10]
+		  DstBlock		  "Torque demand from controller"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Torque demand from driver"
+		  SrcPort		  1
+		  Points		  [81, 0]
+		  Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Scope"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [128, 0]
+		    Branch {
+		    Points		    [0, 250]
+		    DstBlock		    "PID Controller"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [94, 0]
+		    Branch {
+		    Points		    [0, 70]
+		    DstBlock		    "Mux1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [301, 0; 0, -30; 30, 0]
+		    Branch {
+		    Points		    [0, -16; 123, 0; 0, 36]
+		    DstBlock		    "Manual Switch2"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "MinMax"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		  }
 		}
 		Annotation {
-		  SID			  "12:51"
-		  Name			  "Connect your observed states \nhear to plot them in Figure 3 "
-		  Position		  [893, 449]
-		  ZOrder		  -2
-		  FontName		  "Arial"
-		  FontSize		  20
+		  SID			  "83:80"
+		  Name			  "slipp"
+		  Position		  [234, 619]
 		}
 	      }
 	    }
 	    Block {
 	      BlockType		      Outport
 	      Name		      "vehicle fb out"
-	      SID		      "12:52"
+	      SID		      "83:52"
 	      Position		      [325, 558, 355, 572]
 	      ZOrder		      -25
 	      IconDisplay	      "Port number"
@@ -3888,7 +4564,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "cmd out"
-	      SID		      "12:53"
+	      SID		      "83:53"
 	      Position		      [1005, 463, 1035, 477]
 	      ZOrder		      -26
 	      Port		      "2"
@@ -3911,8 +4587,16 @@ Model {
 	    Line {
 	      SrcBlock		      "sensor in"
 	      SrcPort		      1
-	      DstBlock		      "Bus\nSelector"
-	      DstPort		      1
+	      Points		      [12, 0]
+	      Branch {
+		Points			[0, -195]
+		DstBlock		"controller"
+		DstPort			4
+	      }
+	      Branch {
+		DstBlock		"Bus\nSelector"
+		DstPort			1
+	      }
 	    }
 	    Line {
 	      Name		      "<ice>"
@@ -4008,7 +4692,7 @@ Model {
 		DstPort			4
 	      }
 	      Branch {
-		Points			[0, -150]
+		Points			[0, -165]
 		DstBlock		"controller"
 		DstPort			3
 	      }
@@ -4018,6 +4702,7 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Bus\nSelector4"
 	      SrcPort		      1
+	      Points		      [0, 10]
 	      DstBlock		      "Bus\nCreator4"
 	      DstPort		      1
 	    }
@@ -4039,23 +4724,6 @@ Model {
 	      }
 	    }
 	    Line {
-	      Name		      "gear number"
-	      Labels		      [0, 0]
-	      SrcBlock		      "From\nWorkspace1"
-	      SrcPort		      1
-	      Points		      [5, 0]
-	      Branch {
-		Labels			[-1, 0]
-		DstBlock		"Bus\nCreator5"
-		DstPort			1
-	      }
-	      Branch {
-		Points			[0, 165]
-		DstBlock		"Mux"
-		DstPort			3
-	      }
-	    }
-	    Line {
 	      Name		      "gearbox"
 	      Labels		      [0, 0]
 	      SrcBlock		      "Bus\nCreator5"
@@ -4074,7 +4742,7 @@ Model {
 		DstPort			1
 	      }
 	      Branch {
-		Points			[0, 170]
+		Points			[0, 160]
 		DstBlock		"controller"
 		DstPort			2
 	      }
@@ -4115,7 +4783,7 @@ Model {
 	      Labels		      [2, 0]
 	      SrcBlock		      "controller"
 	      SrcPort		      1
-	      Points		      [115, 0; 0, 145]
+	      Points		      [115, 0; 0, 155]
 	      Branch {
 		Points			[0, 185]
 		DstBlock		"Mux"
@@ -4132,6 +4800,32 @@ Model {
 	      SrcPort		      2
 	      DstBlock		      "To Workspace1"
 	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<slipp ratio>"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector4"
+	      SrcPort		      2
+	      Points		      [20, 0; 0, 30]
+	      DstBlock		      "Terminator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "gear number"
+	      Labels		      [-1, 0]
+	      SrcBlock		      "controller"
+	      SrcPort		      3
+	      Points		      [15, 0; 0, 165]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Bus\nCreator5"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 165]
+		DstBlock		"Mux"
+		DstPort			3
+	      }
 	    }
 	  }
 	}
@@ -4154,7 +4848,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    40
+	    $ObjectID		    41
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -4164,28 +4858,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		41
+		$ObjectID		42
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		42
+		$ObjectID		43
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_drive_shaft*2"
 	      }
 	      Object {
-		$ObjectID		43
+		$ObjectID		44
 		Type			"edit"
 		Name			"k_d"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_d"
 	      }
 	      Object {
-		$ObjectID		44
+		$ObjectID		45
 		Type			"edit"
 		Name			"c_d"
 		Prompt			"damping [Nms/rad]"
@@ -4595,13 +5289,11 @@ Model {
 	      SID		      "13:19"
 	      Name		      "\"feedback\" from\nthe gearbox"
 	      Position		      [56, 319]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "13:20"
 	      Name		      "\"feedback\" to\nthe flywheel"
 	      Position		      [721, 324]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -4671,34 +5363,34 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		45
+		$ObjectID		46
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  4
 		  Object {
-		    $ObjectID		    46
+		    $ObjectID		    47
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    47
+		    $ObjectID		    48
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "J_f"
 		  }
 		  Object {
-		    $ObjectID		    48
+		    $ObjectID		    49
 		    Type		    "edit"
 		    Name		    "b_f"
 		    Prompt		    "Damping [Nm s/rad]"
 		    Value		    "b_f"
 		  }
 		  Object {
-		    $ObjectID		    49
+		    $ObjectID		    50
 		    Type		    "edit"
 		    Name		    "i_f"
 		    Prompt		    "Ratio [-]"
@@ -5163,13 +5855,11 @@ Model {
 		  SID			  "14:23"
 		  Name			  "\"feedback\" to\nthe propeller shaft"
 		  Position		  [681, 259]
-		  ZOrder		  -1
 		}
 		Annotation {
 		  SID			  "14:24"
 		  Name			  "\"feedback\" from\nthe drive shafts"
 		  Position		  [62, 261]
-		  ZOrder		  -2
 		}
 	      }
 	    }
@@ -5236,7 +5926,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    50
+	    $ObjectID		    51
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -5249,28 +5939,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		51
+		$ObjectID		52
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		52
+		$ObjectID		53
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_back_sproket"
 	      }
 	      Object {
-		$ObjectID		53
+		$ObjectID		54
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_f"
 	      }
 	      Object {
-		$ObjectID		54
+		$ObjectID		55
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -5709,13 +6399,11 @@ Model {
 	      SID		      "15:20"
 	      Name		      "\"feedback\" to\nthe final drive"
 	      Position		      [711, 334]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "15:21"
 	      Name		      "\"feedback\" from\nthe drive shafts"
 	      Position		      [56, 324]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -5738,7 +6426,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    55
+	    $ObjectID		    56
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -5751,28 +6439,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		56
+		$ObjectID		57
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		57
+		$ObjectID		58
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		58
+		$ObjectID		59
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_e"
 	      }
 	      Object {
-		$ObjectID		59
+		$ObjectID		60
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -6213,13 +6901,11 @@ Model {
 	      SID		      "16:20"
 	      Name		      "\"feedback\" to\nthe engine"
 	      Position		      [716, 324]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "16:21"
 	      Name		      "\"feedback\" from\nthe clutch"
 	      Position		      [51, 324]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -6242,7 +6928,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    60
+	    $ObjectID		    61
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -6255,28 +6941,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		61
+		$ObjectID		62
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		62
+		$ObjectID		63
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_front_sproket"
 	      }
 	      Object {
-		$ObjectID		63
+		$ObjectID		64
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_t"
 	      }
 	      Object {
-		$ObjectID		64
+		$ObjectID		65
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -6715,13 +7401,11 @@ Model {
 	      SID		      "17:20"
 	      Name		      "\"feedback\" from\nthe propeller shaft"
 	      Position		      [56, 324]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "17:21"
 	      Name		      "\"feedback\" to\nthe gearbox"
 	      Position		      [711, 334]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -6751,7 +7435,7 @@ Model {
 	  }
 	  System {
 	    Name		    "gearbox model"
-	    Location		    [16, 52, 1012, 695]
+	    Location		    [0, 24, 1647, 978]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -6807,27 +7491,27 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		65
+		$ObjectID		66
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    66
+		    $ObjectID		    67
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    67
+		    $ObjectID		    68
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    68
+		    $ObjectID		    69
 		    Type		    "edit"
 		    Name		    "b_t"
 		    Prompt		    "Damping [Nm s/rad]"
@@ -7321,13 +8005,11 @@ Model {
 		  SID			  "18:25"
 		  Name			  "\"feedback\" from\nthe propeller shaft"
 		  Position		  [62, 351]
-		  ZOrder		  -1
 		}
 		Annotation {
 		  SID			  "18:26"
 		  Name			  "\"feedback\" to\nthe clutch"
 		  Position		  [681, 349]
-		  ZOrder		  -2
 		}
 	      }
 	    }
@@ -7347,27 +8029,27 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		69
+		$ObjectID		70
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    70
+		    $ObjectID		    71
 		    Type		    "edit"
 		    Name		    "gearNumber"
 		    Prompt		    "gear number vector"
 		    Value		    "gearNumber"
 		  }
 		  Object {
-		    $ObjectID		    71
+		    $ObjectID		    72
 		    Type		    "edit"
 		    Name		    "gearRatio"
 		    Prompt		    "gear ratio vector"
 		    Value		    "gearRatio"
 		  }
 		  Object {
-		    $ObjectID		    72
+		    $ObjectID		    73
 		    Type		    "edit"
 		    Name		    "gearInertia"
 		    Prompt		    "gear inertia vector"
@@ -7639,8 +8321,8 @@ Model {
 	  }
 	  System {
 	    Name		    "ice model"
-	    Location		    [298, 487, 1055, 1041]
-	    Open		    off
+	    Location		    [0, 24, 1647, 978]
+	    Open		    on
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7685,41 +8367,41 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		73
+		$ObjectID		74
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    74
+		    $ObjectID		    75
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    75
+		    $ObjectID		    76
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "J_e"
 		  }
 		  Object {
-		    $ObjectID		    76
+		    $ObjectID		    77
 		    Type		    "edit"
 		    Name		    "tau_d"
 		    Prompt		    "time delay [s]"
 		    Value		    "tau_d"
 		  }
 		  Object {
-		    $ObjectID		    77
+		    $ObjectID		    78
 		    Type		    "edit"
 		    Name		    "tau_e"
 		    Prompt		    "time constant [s]"
 		    Value		    "tau_e"
 		  }
 		  Object {
-		    $ObjectID		    78
+		    $ObjectID		    79
 		    Type		    "edit"
 		    Name		    "init_T"
 		    Prompt		    "initial torque [Nm]"
@@ -8103,7 +8785,6 @@ Model {
 		  SID			  "42"
 		  Name			  "\"feedback\" from\nthe gearbox"
 		  Position		  [49, 210]
-		  ZOrder		  -1
 		}
 	      }
 	    }
@@ -8123,41 +8804,41 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		79
+		$ObjectID		80
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    80
+		    $ObjectID		    81
 		    Type		    "edit"
 		    Name		    "T_max"
 		    Prompt		    "maximum torque [Nm]"
 		    Value		    "T_max"
 		  }
 		  Object {
-		    $ObjectID		    81
+		    $ObjectID		    82
 		    Type		    "edit"
 		    Name		    "N_max"
 		    Prompt		    "maximum speed [rad/s]"
 		    Value		    "N_max"
 		  }
 		  Object {
-		    $ObjectID		    82
+		    $ObjectID		    83
 		    Type		    "edit"
 		    Name		    "N_idle"
 		    Prompt		    "Idle controller reference value [rad/s]"
 		    Value		    "N_idle"
 		  }
 		  Object {
-		    $ObjectID		    83
+		    $ObjectID		    84
 		    Type		    "edit"
 		    Name		    "P"
 		    Prompt		    "Idle controller proportional gain"
 		    Value		    "IdleControllerP"
 		  }
 		  Object {
-		    $ObjectID		    84
+		    $ObjectID		    85
 		    Type		    "edit"
 		    Name		    "I"
 		    Prompt		    "Idle controller integral gain"
@@ -8249,7 +8930,7 @@ Model {
 		  Position		  [310, 204, 395, 226]
 		  ZOrder		  -6
 		  ShowName		  off
-		  LibraryVersion	  "1.274"
+		  LibraryVersion	  "1.281"
 		  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 		  SourceType		  "Compare To Constant"
 		  relop			  ">="
@@ -8265,7 +8946,7 @@ Model {
 		  Position		  [310, 322, 395, 348]
 		  ZOrder		  -7
 		  ShowName		  off
-		  LibraryVersion	  "1.274"
+		  LibraryVersion	  "1.281"
 		  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 		  SourceType		  "Compare To Constant"
 		  relop			  "<="
@@ -8789,15 +9470,13 @@ Model {
 	    Line {
 	      SrcBlock		      "ice"
 	      SrcPort		      2
-	      Points		      [0, 0]
 	      DstBlock		      "mech power out [Nm]"
 	      DstPort		      1
 	    }
 	    Line {
-	      Labels		      [2, 1]
+	      Labels		      [-1, 0]
 	      SrcBlock		      "mech fb in [rad/s]"
 	      SrcPort		      1
-	      Points		      [0, 0]
 	      DstBlock		      "ice"
 	      DstPort		      2
 	    }
@@ -8848,7 +9527,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    85
+	    $ObjectID		    86
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -8858,28 +9537,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		86
+		$ObjectID		87
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		87
+		$ObjectID		88
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		88
+		$ObjectID		89
 		Type			"edit"
 		Name			"k_p"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_p"
 	      }
 	      Object {
-		$ObjectID		89
+		$ObjectID		90
 		Type			"edit"
 		Name			"c_p"
 		Prompt			"damping [Nms/rad]"
@@ -9289,13 +9968,11 @@ Model {
 	      SID		      "77:19"
 	      Name		      "\"feedback\" to\nthe flywheel"
 	      Position		      [721, 324]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "77:20"
 	      Name		      "\"feedback\" from\nthe gearbox"
 	      Position		      [56, 319]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -9528,7 +10205,6 @@ Model {
 	Annotation {
 	  SID			  "79"
 	  Position		  [141, 176]
-	  ZOrder		  -1
 	}
       }
     }
@@ -9551,7 +10227,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		90
+	$ObjectID		91
 	$ClassName		"Simulink.Mask"
 	Description		"Environment settings"
 	IconOpaque		"off"
@@ -9559,28 +10235,28 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  4
 	  Object {
-	    $ObjectID		    91
+	    $ObjectID		    92
 	    Type		    "edit"
 	    Name		    "Tamb"
 	    Prompt		    "Ambient Temperature [K]"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    92
+	    $ObjectID		    93
 	    Type		    "edit"
 	    Name		    "Pamb"
 	    Prompt		    "Ambient Pressure [Pa]"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    93
+	    $ObjectID		    94
 	    Type		    "edit"
 	    Name		    "pos"
 	    Prompt		    "positionvector in slope map [m]"
 	    Value		    "position"
 	  }
 	  Object {
-	    $ObjectID		    94
+	    $ObjectID		    95
 	    Type		    "edit"
 	    Name		    "slope"
 	    Prompt		    "slopevector in slope map [rad]"
@@ -9613,7 +10289,7 @@ Model {
 	  Position		  [335, 295, 365, 325]
 	  ZOrder		  -1
 	  ShowName		  off
-	  LibraryVersion	  "1.274"
+	  LibraryVersion	  "1.281"
 	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 	  SourceType		  "Compare To Constant"
 	  relop			  "<"
@@ -9629,7 +10305,7 @@ Model {
 	  Position		  [335, 345, 365, 375]
 	  ZOrder		  -2
 	  ShowName		  off
-	  LibraryVersion	  "1.274"
+	  LibraryVersion	  "1.281"
 	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
 	  SourceType		  "Compare To Constant"
 	  relop			  "<"
@@ -9849,7 +10525,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		95
+	$ObjectID		96
 	$ClassName		"Simulink.Mask"
 	Description		"Driver model"
       }
