@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.886"
+    ComputedModelVersion    "1.912"
     NumModelReferences	    0
     NumTestPointedSignals   30
     TestPointedSignal {
@@ -181,15 +181,15 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		2
+	Dimension		6
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "83:38"
 	  Extents		  [1408.0, 791.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [5.4132196389502667, -220.244760734112]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-136.63678036104974, 174.00523926588795]
 	}
 	Object {
 	  $ObjectID		  6
@@ -199,6 +199,42 @@ Model {
 	  Extents		  [1408.0, 791.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "83:101"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [-150.16666666666674, -109.95331390647439]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "83:92"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-69.0, -90.5]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "10:46"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "83:128"
+	  Extents		  [1408.0, 791.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-459.0, -87.5]
 	}
 	PropName		"EditorsInfo"
       }
@@ -210,9 +246,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "johka546"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Feb 22 15:59:21 2014"
-  RTWModifiedTimeStamp	  314982845
-  ModelVersionFormat	  "1.%<AutoIncrement:886>"
+  LastModifiedDate	  "Tue Feb 25 15:35:12 2014"
+  RTWModifiedTimeStamp	  315241290
+  ModelVersionFormat	  "1.%<AutoIncrement:912>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -247,7 +283,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    11
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "car_org"
     Array {
@@ -305,13 +341,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      12
       Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  13
 	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  "100"
@@ -346,7 +382,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  14
 	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -378,7 +414,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  15
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -430,7 +466,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  16
 	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -520,7 +556,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  17
 	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -557,7 +593,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  18
 	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -572,7 +608,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  19
 	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -587,7 +623,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  20
 	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
@@ -642,7 +678,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      21
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -697,7 +733,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      22
 	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
@@ -782,11 +818,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    12
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    19
+    $ObjectID		    23
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -875,6 +911,12 @@ Model {
       SampleTime	      "inf"
       FramePeriod	      "inf"
       PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
     }
     Block {
       BlockType		      Display
@@ -993,6 +1035,160 @@ Model {
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	on
       SampleTime	      "-1"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      Lookup_n-D
+      NumberOfTableDimensions "2"
+      BreakpointsForDimension1 "[10,22,31]"
+      BreakpointsForDimension2 "[10,22,31]"
+      BreakpointsForDimension3 "[1:3]"
+      BreakpointsForDimension4 "[1:3]"
+      BreakpointsForDimension5 "[1:3]"
+      BreakpointsForDimension6 "[1:3]"
+      BreakpointsForDimension7 "[1:3]"
+      BreakpointsForDimension8 "[1:3]"
+      BreakpointsForDimension9 "[1:3]"
+      BreakpointsForDimension10	"[1:3]"
+      BreakpointsForDimension11	"[1:3]"
+      BreakpointsForDimension12	"[1:3]"
+      BreakpointsForDimension13	"[1:3]"
+      BreakpointsForDimension14	"[1:3]"
+      BreakpointsForDimension15	"[1:3]"
+      BreakpointsForDimension16	"[1:3]"
+      BreakpointsForDimension17	"[1:3]"
+      BreakpointsForDimension18	"[1:3]"
+      BreakpointsForDimension19	"[1:3]"
+      BreakpointsForDimension20	"[1:3]"
+      BreakpointsForDimension21	"[1:3]"
+      BreakpointsForDimension22	"[1:3]"
+      BreakpointsForDimension23	"[1:3]"
+      BreakpointsForDimension24	"[1:3]"
+      BreakpointsForDimension25	"[1:3]"
+      BreakpointsForDimension26	"[1:3]"
+      BreakpointsForDimension27	"[1:3]"
+      BreakpointsForDimension28	"[1:3]"
+      BreakpointsForDimension29	"[1:3]"
+      BreakpointsForDimension30	"[1:3]"
+      BreakpointsForDimension1Min "[]"
+      BreakpointsForDimension2Min "[]"
+      BreakpointsForDimension3Min "[]"
+      BreakpointsForDimension4Min "[]"
+      BreakpointsForDimension5Min "[]"
+      BreakpointsForDimension6Min "[]"
+      BreakpointsForDimension7Min "[]"
+      BreakpointsForDimension8Min "[]"
+      BreakpointsForDimension9Min "[]"
+      BreakpointsForDimension10Min "[]"
+      BreakpointsForDimension11Min "[]"
+      BreakpointsForDimension12Min "[]"
+      BreakpointsForDimension13Min "[]"
+      BreakpointsForDimension14Min "[]"
+      BreakpointsForDimension15Min "[]"
+      BreakpointsForDimension16Min "[]"
+      BreakpointsForDimension17Min "[]"
+      BreakpointsForDimension18Min "[]"
+      BreakpointsForDimension19Min "[]"
+      BreakpointsForDimension20Min "[]"
+      BreakpointsForDimension21Min "[]"
+      BreakpointsForDimension22Min "[]"
+      BreakpointsForDimension23Min "[]"
+      BreakpointsForDimension24Min "[]"
+      BreakpointsForDimension25Min "[]"
+      BreakpointsForDimension26Min "[]"
+      BreakpointsForDimension27Min "[]"
+      BreakpointsForDimension28Min "[]"
+      BreakpointsForDimension29Min "[]"
+      BreakpointsForDimension30Min "[]"
+      BreakpointsForDimension1Max "[]"
+      BreakpointsForDimension2Max "[]"
+      BreakpointsForDimension3Max "[]"
+      BreakpointsForDimension4Max "[]"
+      BreakpointsForDimension5Max "[]"
+      BreakpointsForDimension6Max "[]"
+      BreakpointsForDimension7Max "[]"
+      BreakpointsForDimension8Max "[]"
+      BreakpointsForDimension9Max "[]"
+      BreakpointsForDimension10Max "[]"
+      BreakpointsForDimension11Max "[]"
+      BreakpointsForDimension12Max "[]"
+      BreakpointsForDimension13Max "[]"
+      BreakpointsForDimension14Max "[]"
+      BreakpointsForDimension15Max "[]"
+      BreakpointsForDimension16Max "[]"
+      BreakpointsForDimension17Max "[]"
+      BreakpointsForDimension18Max "[]"
+      BreakpointsForDimension19Max "[]"
+      BreakpointsForDimension20Max "[]"
+      BreakpointsForDimension21Max "[]"
+      BreakpointsForDimension22Max "[]"
+      BreakpointsForDimension23Max "[]"
+      BreakpointsForDimension24Max "[]"
+      BreakpointsForDimension25Max "[]"
+      BreakpointsForDimension26Max "[]"
+      BreakpointsForDimension27Max "[]"
+      BreakpointsForDimension28Max "[]"
+      BreakpointsForDimension29Max "[]"
+      BreakpointsForDimension30Max "[]"
+      BreakpointsForDimension1DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension2DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension3DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension4DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension5DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension6DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension7DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension8DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension9DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension10DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension11DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension12DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension13DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension14DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension15DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension16DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension17DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension18DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension19DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension20DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension21DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension22DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension23DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension24DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension25DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension26DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension27DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension28DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension29DataTypeStr "Inherit: Same as corresponding input"
+      BreakpointsForDimension30DataTypeStr "Inherit: Same as corresponding input"
+      IndexSearchMethod	      "Binary search"
+      BeginIndexSearchUsingPreviousIndexResult off
+      UseOneInputPortForAllInputData off
+      Table		      "[4 5 6;16 19 20;10 18 23]"
+      TableMin		      "[]"
+      TableMax		      "[]"
+      TableDataTypeStr	      "Inherit: Same as output"
+      IntermediateResultsDataTypeStr "Inherit: Same as output"
+      InterpMethod	      "Linear"
+      ExtrapMethod	      "Linear"
+      DiagnosticForOutOfRangeInput "None"
+      RemoveProtectionInput   off
+      UseLastTableValue	      off
+      SampleTime	      "-1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      FractionDataTypeStr     "Inherit: Inherit via internal rule"
+      SupportTunableTableSize off
+      MaximumIndicesForEachDimension "[]"
       LUTDesignTableMode      "Redesign Table"
       LUTDesignDataSource     "Block Dialog"
       LUTDesignFunctionName   "sqrt(x)"
@@ -1188,6 +1384,10 @@ Model {
       TransDelayFeedthrough   off
       PadeOrder		      "0"
     }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
   }
   System {
     Name		    "car_org"
@@ -1353,7 +1553,7 @@ Model {
 	  }
 	  System {
 	    Name		    "chassis model"
-	    Location		    [0, 24, 1280, 776]
+	    Location		    [0, 24, 1647, 978]
 	    Open		    off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -1400,97 +1600,97 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		20
+		$ObjectID		24
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  13
 		  Object {
-		    $ObjectID		    21
+		    $ObjectID		    25
 		    Type		    "edit"
 		    Name		    "g"
 		    Prompt		    "gravity constant [m/s^2]"
 		    Value		    "g"
 		  }
 		  Object {
-		    $ObjectID		    22
+		    $ObjectID		    26
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "vehicle mass [kg]"
 		    Value		    "mass"
 		  }
 		  Object {
-		    $ObjectID		    23
+		    $ObjectID		    27
 		    Type		    "edit"
 		    Name		    "J_w"
 		    Prompt		    "wheel inertia [kg m^2]"
 		    Value		    "J_w"
 		  }
 		  Object {
-		    $ObjectID		    24
+		    $ObjectID		    28
 		    Type		    "edit"
 		    Name		    "r_w"
 		    Prompt		    "wheel radius [m]"
 		    Value		    "r_w"
 		  }
 		  Object {
-		    $ObjectID		    25
+		    $ObjectID		    29
 		    Type		    "edit"
 		    Name		    "init_d"
 		    Prompt		    "initial drive shaft speed [rad/s]"
 		    Value		    "init_d"
 		  }
 		  Object {
-		    $ObjectID		    26
+		    $ObjectID		    30
 		    Type		    "edit"
 		    Name		    "c_w"
 		    Prompt		    "air drag coefficient [-]"
 		    Value		    "c_w"
 		  }
 		  Object {
-		    $ObjectID		    27
+		    $ObjectID		    31
 		    Type		    "edit"
 		    Name		    "A_a"
 		    Prompt		    "max. vehicle cross section area [m^2]"
 		    Value		    "A_a"
 		  }
 		  Object {
-		    $ObjectID		    28
+		    $ObjectID		    32
 		    Type		    "edit"
 		    Name		    "Rho_a"
 		    Prompt		    "Air density [kg/m^3]"
 		    Value		    "Rho_a"
 		  }
 		  Object {
-		    $ObjectID		    29
+		    $ObjectID		    33
 		    Type		    "edit"
 		    Name		    "c_r"
 		    Prompt		    "rolling resistance coefficient [-]"
 		    Value		    "c_r"
 		  }
 		  Object {
-		    $ObjectID		    30
+		    $ObjectID		    34
 		    Type		    "edit"
 		    Name		    "Bx"
 		    Prompt		    "Magic Bx"
 		    Value		    "Bx"
 		  }
 		  Object {
-		    $ObjectID		    31
+		    $ObjectID		    35
 		    Type		    "edit"
 		    Name		    "Cx"
 		    Prompt		    "Magic Cx"
 		    Value		    "Cx"
 		  }
 		  Object {
-		    $ObjectID		    32
+		    $ObjectID		    36
 		    Type		    "edit"
 		    Name		    "Dx"
 		    Prompt		    "Magic Dx"
 		    Value		    "Dx"
 		  }
 		  Object {
-		    $ObjectID		    33
+		    $ObjectID		    37
 		    Type		    "edit"
 		    Name		    "Ex"
 		    Prompt		    "Magic Ex"
@@ -2401,11 +2601,11 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		34
+		$ObjectID		38
 		$ClassName		"Simulink.Mask"
 		Object {
 		  $PropName		  "Parameters"
-		  $ObjectID		  35
+		  $ObjectID		  39
 		  $ClassName		  "Simulink.MaskParameter"
 		  Type			  "edit"
 		  Name			  "brake_gain"
@@ -2415,8 +2615,8 @@ Model {
 	      }
 	      System {
 		Name			"local controller"
-		Location		[16, 52, 1171, 1008]
-		Open			off
+		Location		[0, 24, 1647, 978]
+		Open			on
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -2545,7 +2745,6 @@ Model {
 		Line {
 		  SrcBlock		  "Bus\nCreator"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "ctrl out"
 		  DstPort		  1
 		}
@@ -2634,7 +2833,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    36
+	    $ObjectID		    40
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -2644,28 +2843,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		37
+		$ObjectID		41
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		38
+		$ObjectID		42
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		39
+		$ObjectID		43
 		Type			"edit"
 		Name			"k_c"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_c"
 	      }
 	      Object {
-		$ObjectID		40
+		$ObjectID		44
 		Type			"edit"
 		Name			"c_c"
 		Prompt			"damping [Nms/rad]"
@@ -3115,7 +3314,7 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "91"
+	    SIDHighWatermark	    "130"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "driver cmd in"
@@ -3740,7 +3939,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"80"
+		ZoomFactor		"125"
 		Block {
 		  BlockType		  Inport
 		  Name			  "x_ref"
@@ -3793,6 +3992,607 @@ Model {
 		  }
 		}
 		Block {
+		  BlockType		  SubSystem
+		  Name			  "Disc PID"
+		  SID			  "83:92"
+		  Ports			  [5, 1]
+		  Position		  [365, 512, 405, 588]
+		  ZOrder		  32
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  Object {
+		    $PropName		    "MaskObject"
+		    $ObjectID		    45
+		    $ClassName		    "Simulink.Mask"
+		    Array {
+		    Type		    "Simulink.MaskParameter"
+		    Dimension		    10
+		    Object {
+		    $ObjectID		    46
+		    Type		    "edit"
+		    Name		    "Ts"
+		    Prompt		    "Sampling time"
+		    Value		    "0.01"
+		    }
+		    Object {
+		    $ObjectID		    47
+		    Type		    "edit"
+		    Name		    "Ti"
+		    Prompt		    "Ti"
+		    Value		    "[7225.43584206017 7225.43584206017]"
+		    }
+		    Object {
+		    $ObjectID		    48
+		    Type		    "edit"
+		    Name		    "Td"
+		    Prompt		    "Td"
+		    Value		    "[112.335024874473 112.335024874473]"
+		    }
+		    Object {
+		    $ObjectID		    49
+		    Type		    "edit"
+		    Name		    "K"
+		    Prompt		    "K"
+		    Value		    "[1807.69288725995 1807.69288725995]"
+		    }
+		    Object {
+		    $ObjectID		    50
+		    Type		    "edit"
+		    Name		    "theta"
+		    Prompt		    "theta"
+		    Value		    "[]"
+		    }
+		    Object {
+		    $ObjectID		    51
+		    Type		    "edit"
+		    Name		    "mu"
+		    Prompt		    "mu"
+		    Value		    "[0.01 0.01]"
+		    }
+		    Object {
+		    $ObjectID		    52
+		    Type		    "edit"
+		    Name		    "ubounds"
+		    Prompt		    "ubounds"
+		    Value		    "[0 400]"
+		    }
+		    Object {
+		    $ObjectID		    53
+		    Type		    "edit"
+		    Name		    "N"
+		    Prompt		    "N Number of states to relay"
+		    Value		    "4"
+		    }
+		    Object {
+		    $ObjectID		    54
+		    Type		    "edit"
+		    Name		    "pidfunc"
+		    Prompt		    "Matlab .m PID"
+		    Value		    "'pidfunc'"
+		    }
+		    Object {
+		    $ObjectID		    55
+		    Type		    "edit"
+		    Name		    "numberOfPIDParams"
+		    Prompt		    "Numper of params for parametric PID"
+		    Value		    "2"
+		    }
+		    PropName		    "Parameters"
+		    }
+		  }
+		  Port {
+		    PortNumber		    1
+		    Name		    "T_req"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "Disc PID"
+		    Location		    [0, 24, 1647, 978]
+		    Open		    on
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "rn"
+		    SID			    "83:93"
+		    Position		    [325, 253, 355, 267]
+		    ZOrder		    3
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "yn"
+		    SID			    "83:94"
+		    Position		    [325, 283, 355, 297]
+		    ZOrder		    4
+		    NamePlacement	    "alternate"
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "amn"
+		    SID			    "83:95"
+		    Position		    [325, 223, 355, 237]
+		    ZOrder		    6
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "umann"
+		    SID			    "83:96"
+		    Position		    [325, 193, 355, 207]
+		    ZOrder		    9
+		    Port		    "4"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "param set"
+		    SID			    "83:114"
+		    Position		    [200, 343, 230, 357]
+		    ZOrder		    14
+		    NamePlacement	    "alternate"
+		    Port		    "5"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Demux
+		    Name		    "Demux"
+		    SID			    "83:98"
+		    Ports		    [1, 2]
+		    Position		    [695, 286, 700, 324]
+		    ZOrder		    13
+		    ShowName		    off
+		    Outputs		    "2"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    MATLABFcn
+		    Name		    "Interpreted MATLAB Function"
+		    SID			    "83:99"
+		    Ports		    [1, 1]
+		    Position		    [600, 290, 670, 320]
+		    ZOrder		    11
+		    MATLABFcn		    "pidfunc"
+		    OutputDimensions	    "2"
+		    Output1D		    off
+		    }
+		    Block {
+		    BlockType		    Mux
+		    Name		    "Mux"
+		    SID			    "83:100"
+		    Ports		    [8, 1]
+		    Position		    [520, 190, 540, 420]
+		    ZOrder		    12
+		    ShowName		    off
+		    Inputs		    "8"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Parameters"
+		    SID			    "83:101"
+		    Ports		    [1, 3]
+		    Position		    [290, 304, 370, 396]
+		    ZOrder		    -5
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "Parameters"
+		    Location		    [0, 24, 1647, 978]
+		    Open		    on
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "200"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "pidselector"
+		    SID			    "83:118"
+		    Position		    [110, 33, 140, 47]
+		    ZOrder		    44
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Parametric PID"
+		    SID			    "83:128"
+		    Ports		    [1, 1]
+		    Position		    [180, 15, 275, 65]
+		    ZOrder		    53
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "Parametric PID"
+		    Location		    [0, 24, 1647, 978]
+		    Open		    on
+		    ModelBrowserVisibility  on
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "set"
+		    SID			    "83:129"
+		    Position		    [20, 43, 50, 57]
+		    ZOrder		    53
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Lookup_n-D
+		    Name		    "K"
+		    SID			    "83:121"
+		    Ports		    [1, 1]
+		    Position		    [200, 18, 265, 82]
+		    ZOrder		    47
+		    NumberOfTableDimensions "1"
+		    BreakpointsForDimension1 "[1:numberOfPIDParams]"
+		    Table		    "K"
+		    InterpMethod	    "Flat"
+		    RndMeth		    "Simplest"
+		    }
+		    Block {
+		    BlockType		    Mux
+		    Name		    "Mux"
+		    SID			    "83:123"
+		    Ports		    [5, 1]
+		    Position		    [355, 86, 370, 244]
+		    ZOrder		    48
+		    ShowName		    off
+		    Inputs		    "5"
+		    DisplayOption	    "bar"
+		    }
+		    Block {
+		    BlockType		    Lookup_n-D
+		    Name		    "Td"
+		    SID			    "83:125"
+		    Ports		    [1, 1]
+		    Position		    [200, 193, 265, 257]
+		    ZOrder		    50
+		    NumberOfTableDimensions "1"
+		    BreakpointsForDimension1 "[1:numberOfPIDParams]"
+		    Table		    "Td"
+		    InterpMethod	    "Flat"
+		    RndMeth		    "Simplest"
+		    }
+		    Block {
+		    BlockType		    Lookup_n-D
+		    Name		    "Ti"
+		    SID			    "83:124"
+		    Ports		    [1, 1]
+		    Position		    [200, 103, 265, 167]
+		    ZOrder		    49
+		    NumberOfTableDimensions "1"
+		    BreakpointsForDimension1 "[1:numberOfPIDParams]"
+		    Table		    "Ti"
+		    InterpMethod	    "Flat"
+		    RndMeth		    "Simplest"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "ctrlparamblock1 TODO"
+		    SID			    "83:127"
+		    Position		    [185, 374, 305, 406]
+		    ZOrder		    52
+		    }
+		    Block {
+		    BlockType		    Lookup_n-D
+		    Name		    "mu"
+		    SID			    "83:126"
+		    Ports		    [1, 1]
+		    Position		    [200, 288, 265, 352]
+		    ZOrder		    51
+		    NumberOfTableDimensions "1"
+		    BreakpointsForDimension1 "[1:numberOfPIDParams]"
+		    Table		    "mu"
+		    InterpMethod	    "Flat"
+		    RndMeth		    "Simplest"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Params"
+		    SID			    "83:130"
+		    Position		    [630, 158, 660, 172]
+		    ZOrder		    54
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "Mux"
+		    SrcPort		    1
+		    DstBlock		    "Params"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "set"
+		    SrcPort		    1
+		    Points		    [102, 0]
+		    Branch {
+		    Points		    [0, 85; 1, 0]
+		    Branch {
+		    Points		    [0, 90]
+		    Branch {
+		    Points		    [0, 95]
+		    DstBlock		    "mu"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Td"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Ti"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "K"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Ti"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "ctrlparamblock1 TODO"
+		    SrcPort		    1
+		    Points		    [15, 0; 0, -165]
+		    DstBlock		    "Mux"
+		    DstPort		    5
+		    }
+		    Line {
+		    SrcBlock		    "mu"
+		    SrcPort		    1
+		    Points		    [50, 0; 0, -125]
+		    DstBlock		    "Mux"
+		    DstPort		    4
+		    }
+		    Line {
+		    SrcBlock		    "Td"
+		    SrcPort		    1
+		    Points		    [40, 0; 0, -60]
+		    DstBlock		    "Mux"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "K"
+		    SrcPort		    1
+		    Points		    [41, 0; 0, 55]
+		    DstBlock		    "Mux"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "samplingtimeblock"
+		    SID			    "83:103"
+		    Position		    [165, 134, 285, 166]
+		    ZOrder		    -3
+		    Value		    "Ts"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "uboundsblock"
+		    SID			    "83:104"
+		    Position		    [165, 84, 285, 116]
+		    ZOrder		    -4
+		    Value		    "ubounds"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Control parameters"
+		    SID			    "83:117"
+		    Position		    [310, 33, 340, 47]
+		    ZOrder		    43
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Output bounds"
+		    SID			    "83:106"
+		    Position		    [310, 93, 340, 107]
+		    ZOrder		    -6
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Sample time"
+		    SID			    "83:107"
+		    Position		    [310, 143, 340, 157]
+		    ZOrder		    -7
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "samplingtimeblock"
+		    SrcPort		    1
+		    DstBlock		    "Sample time"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "uboundsblock"
+		    SrcPort		    1
+		    DstBlock		    "Output bounds"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "pidselector"
+		    SrcPort		    1
+		    DstBlock		    "Parametric PID"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Parametric PID"
+		    SrcPort		    1
+		    DstBlock		    "Control parameters"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    TransportDelay
+		    Name		    "Transport\nDelay"
+		    SID			    "83:108"
+		    Ports		    [1, 1]
+		    Position		    [600, 430, 630, 460]
+		    ZOrder		    -9
+		    BlockMirror		    on
+		    DelayTime		    "Ts"
+		    InitialOutput	    "zeros(N,1)"
+		    FixedBuffer		    on
+		    }
+		    Block {
+		    BlockType		    ZeroOrderHold
+		    Name		    "Zero-Order\nHold"
+		    SID			    "83:109"
+		    Position		    [760, 280, 795, 310]
+		    ZOrder		    -10
+		    SampleTime		    "Ts"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "un"
+		    SID			    "83:110"
+		    Position		    [840, 288, 870, 302]
+		    ZOrder		    5
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    SrcBlock		    "Interpreted MATLAB Function"
+		    SrcPort		    1
+		    DstBlock		    "Demux"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Mux"
+		    SrcPort		    1
+		    DstBlock		    "Interpreted MATLAB Function"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "umann"
+		    SrcPort		    1
+		    Points		    [145, 0]
+		    DstBlock		    "Mux"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "amn"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "yn"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    4
+		    }
+		    Line {
+		    SrcBlock		    "rn"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Demux"
+		    SrcPort		    1
+		    DstBlock		    "Zero-Order\nHold"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Zero-Order\nHold"
+		    SrcPort		    1
+		    DstBlock		    "un"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Parameters"
+		    SrcPort		    3
+		    DstBlock		    "Mux"
+		    DstPort		    7
+		    }
+		    Line {
+		    SrcBlock		    "Parameters"
+		    SrcPort		    2
+		    DstBlock		    "Mux"
+		    DstPort		    6
+		    }
+		    Line {
+		    SrcBlock		    "Transport\nDelay"
+		    SrcPort		    1
+		    Points		    [-90, 0]
+		    DstBlock		    "Mux"
+		    DstPort		    8
+		    }
+		    Line {
+		    SrcBlock		    "Demux"
+		    SrcPort		    2
+		    Points		    [9, 0; 0, 130]
+		    DstBlock		    "Transport\nDelay"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Parameters"
+		    SrcPort		    1
+		    DstBlock		    "Mux"
+		    DstPort		    5
+		    }
+		    Line {
+		    SrcBlock		    "param set"
+		    SrcPort		    1
+		    DstBlock		    "Parameters"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
 		  BlockType		  FromWorkspace
 		  Name			  "From\nWorkspace1"
 		  SID			  "83:15"
@@ -3836,6 +4636,20 @@ Model {
 		  CurrentSetting	  "0"
 		}
 		Block {
+		  BlockType		  ManualSwitch
+		  Name			  "Manual Switch3"
+		  SID			  "83:113"
+		  Position		  [455, 417, 485, 453]
+		  ZOrder		  35
+		  CurrentSetting	  "0"
+		  Port {
+		    PortNumber		    1
+		    Name		    "T_req"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
 		  BlockType		  MinMax
 		  Name			  "MinMax"
 		  SID			  "83:88"
@@ -3861,7 +4675,7 @@ Model {
 		  Name			  "Mux1"
 		  SID			  "83:90"
 		  Ports			  [2, 1]
-		  Position		  [435, 341, 440, 379]
+		  Position		  [545, 341, 550, 379]
 		  ZOrder		  30
 		  ShowName		  off
 		  Inputs		  "2"
@@ -3872,7 +4686,7 @@ Model {
 		  Name			  "PID Controller"
 		  SID			  "83:78"
 		  Ports			  [2, 1]
-		  Position		  [365, 502, 405, 538]
+		  Position		  [375, 407, 415, 443]
 		  ZOrder		  19
 		  LibraryVersion	  "1.281"
 		  SourceBlock		  "simulink/Continuous/PID Controller"
@@ -4061,7 +4875,7 @@ Model {
 		  Name			  "Sum"
 		  SID			  "83:77"
 		  Ports			  [2, 1]
-		  Position		  [200, 510, 220, 530]
+		  Position		  [200, 405, 220, 425]
 		  ZOrder		  18
 		  ShowName		  off
 		  IconShape		  "round"
@@ -4086,11 +4900,25 @@ Model {
 		}
 		Block {
 		  BlockType		  Constant
+		  Name			  "auto = 1"
+		  SID			  "83:111"
+		  Position		  [105, 450, 135, 480]
+		  ZOrder		  33
+		}
+		Block {
+		  BlockType		  Constant
 		  Name			  "desierd slipp"
 		  SID			  "83:76"
 		  Position		  [105, 505, 135, 535]
 		  ZOrder		  17
 		  Value			  "0.3"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "first param"
+		  SID			  "83:122"
+		  Position		  [255, 655, 285, 685]
+		  ZOrder		  42
 		}
 		Block {
 		  BlockType		  SubSystem
@@ -4284,7 +5112,7 @@ Model {
 		  Name			  "slipp1"
 		  SID			  "83:89"
 		  Ports			  [2]
-		  Position		  [470, 336, 500, 369]
+		  Position		  [580, 336, 610, 369]
 		  ZOrder		  29
 		  Floating		  off
 		  Location		  [5, 45, 1925, 1147]
@@ -4306,7 +5134,6 @@ Model {
 		    MarkerStyles	    "none|none|none|none|none|none"
 		  }
 		  ShowLegends		  on
-		  LegendLocations	  "0.87732     0.91271    0.059375    0.018451\n0.90409     0.45129    0.096354    0.032668"
 		  TimeRange		  "100"
 		  YMin			  "-0.5~-25"
 		  YMax			  "3~400"
@@ -4349,11 +5176,11 @@ Model {
 		}
 		Line {
 		  Name			  "T_req"
-		  SrcBlock		  "PID Controller"
+		  SrcBlock		  "Manual Switch3"
 		  SrcPort		  1
-		  Points		  [30, 0]
+		  Points		  [16, 0]
 		  Branch {
-		    Points		    [304, 0; 0, -220]
+		    Points		    [0, 85; 238, 0; 0, -220]
 		    Branch {
 		    Points		    [0, -35]
 		    DstBlock		    "MinMax"
@@ -4365,8 +5192,8 @@ Model {
 		    }
 		  }
 		  Branch {
-		    Labels		    [3, 1]
-		    Points		    [0, -56; -27, 0; 0, -94]
+		    Labels		    [2, 1]
+		    Points		    [0, -65]
 		    DstBlock		    "Mux1"
 		    DstPort		    2
 		  }
@@ -4417,13 +5244,13 @@ Model {
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector"
 		  SrcPort		  1
-		  Points		  [85, 0]
+		  Points		  [85, 0; 0, -20]
 		  Branch {
 		    DstBlock		    "Saturation1"
 		    DstPort		    1
 		  }
 		  Branch {
-		    Points		    [48, 0; 0, -28; 197, 0]
+		    Points		    [0, -2; 355, 0]
 		    DstBlock		    "slipp1"
 		    DstPort		    1
 		  }
@@ -4457,23 +5284,39 @@ Model {
 		Line {
 		  SrcBlock		  "desierd slipp"
 		  SrcPort		  1
-		  DstBlock		  "Sum"
-		  DstPort		  1
+		  Points		  [40, 0]
+		  Branch {
+		    Points		    [170, 0]
+		    DstBlock		    "Disc PID"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -105]
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		  }
 		}
 		Line {
 		  Name			  "e"
 		  Labels		  [1, 0]
 		  SrcBlock		  "Sum"
 		  SrcPort		  1
-		  Points		  [125, 0]
 		  DstBlock		  "PID Controller"
 		  DstPort		  1
 		}
 		Line {
 		  SrcBlock		  "Saturation1"
 		  SrcPort		  1
-		  DstBlock		  "Sum"
-		  DstPort		  2
+		  Points		  [0, -20]
+		  Branch {
+		    Points		    [140, 0]
+		    DstBlock		    "Disc PID"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		  }
 		}
 		Line {
 		  SrcBlock		  "gear changer"
@@ -4518,21 +5361,23 @@ Model {
 		    DstPort		    1
 		  }
 		  Branch {
-		    Points		    [128, 0]
+		    Points		    [89, 0]
 		    Branch {
-		    Points		    [0, 250]
+		    Points		    [39, 0]
+		    Branch {
+		    Points		    [0, 155]
 		    DstBlock		    "PID Controller"
 		    DstPort		    2
 		    }
 		    Branch {
-		    Points		    [94, 0]
+		    Points		    [192, 0]
 		    Branch {
 		    Points		    [0, 70]
 		    DstBlock		    "Mux1"
 		    DstPort		    1
 		    }
 		    Branch {
-		    Points		    [301, 0; 0, -30; 30, 0]
+		    Points		    [203, 0; 0, -30; 30, 0]
 		    Branch {
 		    Points		    [0, -16; 123, 0; 0, 36]
 		    DstBlock		    "Manual Switch2"
@@ -4544,7 +5389,42 @@ Model {
 		    }
 		    }
 		    }
+		    }
+		    Branch {
+		    Points		    [0, 285]
+		    DstBlock		    "Disc PID"
+		    DstPort		    4
+		    }
 		  }
+		}
+		Line {
+		  SrcBlock		  "auto = 1"
+		  SrcPort		  1
+		  Points		  [165, 0; 0, 85]
+		  DstBlock		  "Disc PID"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "T_req"
+		  SrcBlock		  "PID Controller"
+		  SrcPort		  1
+		  DstBlock		  "Manual Switch3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "T_req"
+		  SrcBlock		  "Disc PID"
+		  SrcPort		  1
+		  Points		  [22, 0; 0, -105]
+		  DstBlock		  "Manual Switch3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "first param"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, -90]
+		  DstBlock		  "Disc PID"
+		  DstPort		  5
 		}
 		Annotation {
 		  SID			  "83:80"
@@ -4848,7 +5728,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    41
+	    $ObjectID		    56
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -4858,28 +5738,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		42
+		$ObjectID		57
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		43
+		$ObjectID		58
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_drive_shaft*2"
 	      }
 	      Object {
-		$ObjectID		44
+		$ObjectID		59
 		Type			"edit"
 		Name			"k_d"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_d"
 	      }
 	      Object {
-		$ObjectID		45
+		$ObjectID		60
 		Type			"edit"
 		Name			"c_d"
 		Prompt			"damping [Nms/rad]"
@@ -5363,34 +6243,34 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		46
+		$ObjectID		61
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  4
 		  Object {
-		    $ObjectID		    47
+		    $ObjectID		    62
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    48
+		    $ObjectID		    63
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "J_f"
 		  }
 		  Object {
-		    $ObjectID		    49
+		    $ObjectID		    64
 		    Type		    "edit"
 		    Name		    "b_f"
 		    Prompt		    "Damping [Nm s/rad]"
 		    Value		    "b_f"
 		  }
 		  Object {
-		    $ObjectID		    50
+		    $ObjectID		    65
 		    Type		    "edit"
 		    Name		    "i_f"
 		    Prompt		    "Ratio [-]"
@@ -5926,7 +6806,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    51
+	    $ObjectID		    66
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -5939,28 +6819,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		52
+		$ObjectID		67
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		53
+		$ObjectID		68
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_back_sproket"
 	      }
 	      Object {
-		$ObjectID		54
+		$ObjectID		69
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_f"
 	      }
 	      Object {
-		$ObjectID		55
+		$ObjectID		70
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -6426,7 +7306,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    56
+	    $ObjectID		    71
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -6439,28 +7319,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		57
+		$ObjectID		72
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		58
+		$ObjectID		73
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		59
+		$ObjectID		74
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_e"
 	      }
 	      Object {
-		$ObjectID		60
+		$ObjectID		75
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -6928,7 +7808,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    61
+	    $ObjectID		    76
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -6941,28 +7821,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		62
+		$ObjectID		77
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		63
+		$ObjectID		78
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"inertia_front_sproket"
 	      }
 	      Object {
-		$ObjectID		64
+		$ObjectID		79
 		Type			"edit"
 		Name			"speedinit"
 		Prompt			"Initial speed [rad/s]"
 		Value			"init_t"
 	      }
 	      Object {
-		$ObjectID		65
+		$ObjectID		80
 		Type			"edit"
 		Name			"angleinit"
 		Prompt			"Initial angle [rad]"
@@ -7491,27 +8371,27 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		66
+		$ObjectID		81
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    67
+		    $ObjectID		    82
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    68
+		    $ObjectID		    83
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    69
+		    $ObjectID		    84
 		    Type		    "edit"
 		    Name		    "b_t"
 		    Prompt		    "Damping [Nm s/rad]"
@@ -8029,27 +8909,27 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		70
+		$ObjectID		85
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    71
+		    $ObjectID		    86
 		    Type		    "edit"
 		    Name		    "gearNumber"
 		    Prompt		    "gear number vector"
 		    Value		    "gearNumber"
 		  }
 		  Object {
-		    $ObjectID		    72
+		    $ObjectID		    87
 		    Type		    "edit"
 		    Name		    "gearRatio"
 		    Prompt		    "gear ratio vector"
 		    Value		    "gearRatio"
 		  }
 		  Object {
-		    $ObjectID		    73
+		    $ObjectID		    88
 		    Type		    "edit"
 		    Name		    "gearInertia"
 		    Prompt		    "gear inertia vector"
@@ -8367,41 +9247,41 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		74
+		$ObjectID		89
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    75
+		    $ObjectID		    90
 		    Type		    "edit"
 		    Name		    "mass"
 		    Prompt		    "mass [kg]"
 		    Value		    "0"
 		  }
 		  Object {
-		    $ObjectID		    76
+		    $ObjectID		    91
 		    Type		    "edit"
 		    Name		    "inertia"
 		    Prompt		    "inertia [kg m^2]"
 		    Value		    "J_e"
 		  }
 		  Object {
-		    $ObjectID		    77
+		    $ObjectID		    92
 		    Type		    "edit"
 		    Name		    "tau_d"
 		    Prompt		    "time delay [s]"
 		    Value		    "tau_d"
 		  }
 		  Object {
-		    $ObjectID		    78
+		    $ObjectID		    93
 		    Type		    "edit"
 		    Name		    "tau_e"
 		    Prompt		    "time constant [s]"
 		    Value		    "tau_e"
 		  }
 		  Object {
-		    $ObjectID		    79
+		    $ObjectID		    94
 		    Type		    "edit"
 		    Name		    "init_T"
 		    Prompt		    "initial torque [Nm]"
@@ -8804,41 +9684,41 @@ Model {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		80
+		$ObjectID		95
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    81
+		    $ObjectID		    96
 		    Type		    "edit"
 		    Name		    "T_max"
 		    Prompt		    "maximum torque [Nm]"
 		    Value		    "T_max"
 		  }
 		  Object {
-		    $ObjectID		    82
+		    $ObjectID		    97
 		    Type		    "edit"
 		    Name		    "N_max"
 		    Prompt		    "maximum speed [rad/s]"
 		    Value		    "N_max"
 		  }
 		  Object {
-		    $ObjectID		    83
+		    $ObjectID		    98
 		    Type		    "edit"
 		    Name		    "N_idle"
 		    Prompt		    "Idle controller reference value [rad/s]"
 		    Value		    "N_idle"
 		  }
 		  Object {
-		    $ObjectID		    84
+		    $ObjectID		    99
 		    Type		    "edit"
 		    Name		    "P"
 		    Prompt		    "Idle controller proportional gain"
 		    Value		    "IdleControllerP"
 		  }
 		  Object {
-		    $ObjectID		    85
+		    $ObjectID		    100
 		    Type		    "edit"
 		    Name		    "I"
 		    Prompt		    "Idle controller integral gain"
@@ -9527,7 +10407,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    86
+	    $ObjectID		    101
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Inertia"
 	    SelfModifiable	    "on"
@@ -9537,28 +10417,28 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      4
 	      Object {
-		$ObjectID		87
+		$ObjectID		102
 		Type			"edit"
 		Name			"mass"
 		Prompt			"Component mass [kg]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		88
+		$ObjectID		103
 		Type			"edit"
 		Name			"inertia"
 		Prompt			"Inertia [kg*m2]"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		89
+		$ObjectID		104
 		Type			"edit"
 		Name			"k_p"
 		Prompt			"stiffness [Nm/rad]"
 		Value			"k_p"
 	      }
 	      Object {
-		$ObjectID		90
+		$ObjectID		105
 		Type			"edit"
 		Name			"c_p"
 		Prompt			"damping [Nms/rad]"
@@ -10227,7 +11107,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		91
+	$ObjectID		106
 	$ClassName		"Simulink.Mask"
 	Description		"Environment settings"
 	IconOpaque		"off"
@@ -10235,28 +11115,28 @@ Model {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  4
 	  Object {
-	    $ObjectID		    92
+	    $ObjectID		    107
 	    Type		    "edit"
 	    Name		    "Tamb"
 	    Prompt		    "Ambient Temperature [K]"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    93
+	    $ObjectID		    108
 	    Type		    "edit"
 	    Name		    "Pamb"
 	    Prompt		    "Ambient Pressure [Pa]"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    94
+	    $ObjectID		    109
 	    Type		    "edit"
 	    Name		    "pos"
 	    Prompt		    "positionvector in slope map [m]"
 	    Value		    "position"
 	  }
 	  Object {
-	    $ObjectID		    95
+	    $ObjectID		    110
 	    Type		    "edit"
 	    Name		    "slope"
 	    Prompt		    "slopevector in slope map [rad]"
@@ -10525,7 +11405,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		96
+	$ObjectID		111
 	$ClassName		"Simulink.Mask"
 	Description		"Driver model"
       }
@@ -10662,5 +11542,28 @@ Model {
       DstBlock		      "Display"
       DstPort		      1
     }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2012b) dated Jul 26 2012, 22:31:44
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "car_org"
+    created		    "25-Feb-2014 14:59:56"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    76014001.001
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
   }
 }
