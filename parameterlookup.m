@@ -1,5 +1,5 @@
 function parameterlookup(block)
-% C Johan Källström
+% C Johan Kï¿½llstrï¿½m
 setup(block);
 
 
@@ -20,13 +20,13 @@ function setup(block)
   
   block.InputPort(1).Dimensions        = 1;
   block.InputPort(1).DirectFeedthrough = true;
-  block.OutputPort(1).Dimensions        = m;
+  block.OutputPort(1).Dimensions        = n;
   
   % Register parameters
-  block.NumDialogPrms     = 1;
+  block.NumDialogPrms     = 2;
 
   % Register sample times
-  %block.SampleTimes = [block.DialogPrm(8).Data 0];
+  block.SampleTimes = [block.DialogPrm(2).Data 0];
   
   %
   block.RegBlockMethod('PostPropagationSetup', @DoPostPropSetup);
